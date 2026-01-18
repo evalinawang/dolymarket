@@ -47,6 +47,7 @@ async function handleResponse<T>(response: Response): Promise<T> {
 
 interface RequestOptions extends Omit<RequestInit, 'body'> {
   body?: unknown;
+  params?: Record<string, string | number | boolean>;
 }
 
 export const apiClient = {
@@ -54,7 +55,20 @@ export const apiClient = {
     endpoint: string,
     options: RequestOptions = {}
   ): Promise<T> {
-    const url = `${BASE_URL}${endpoint}`;
+    let url = `${BASE_URL}${endpoint}`;
+
+    // Add query parameters if provided
+    if (options.params) {
+      const searchParams = new URLSearchParams();
+      Object.entries(options.params).forEach(([key, value]) => {
+        searchParams.append(key, String(value));
+      });
+      const queryString = searchParams.toString();
+      if (queryString) {
+        url += `?${queryString}`;
+      }
+    }
+
     const token = getAuthToken();
 
     const headers: Record<string, string> = {

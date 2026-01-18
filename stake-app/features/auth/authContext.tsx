@@ -46,7 +46,32 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     async (email: string, password: string) => {
       setAuthState((prev) => ({ ...prev, isLoading: true, error: null }));
       try {
-        // TODO: Replace with actual API call when backend is ready
+        // Demo login support - allow demo@stake.app / demopass123
+        if (email === 'demo@stake.app' && password === 'demopass123') {
+          const demoUser: User = {
+            id: 'user-demo-001',
+            email: 'demo@stake.app',
+            username: 'demouser',
+            displayName: 'Demo User',
+            bio: 'Testing the Stake app',
+            createdAt: new Date('2025-01-01').toISOString(),
+            updatedAt: new Date().toISOString(),
+          };
+          const demoToken = 'demo-token-' + Date.now();
+
+          authStorage.setToken(demoToken);
+          authStorage.setUser(demoUser);
+
+          setAuthState({
+            user: demoUser,
+            token: demoToken,
+            isLoading: false,
+            error: null,
+          });
+          return;
+        }
+
+        // Regular API call when backend is ready
         const response = await apiClient.post<{
           user: User;
           token: string;
@@ -77,14 +102,39 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   );
 
   const signup = useCallback(
-    async (email: string, password: string, displayName: string) => {
+    async (email: string, password: string, username: string) => {
       setAuthState((prev) => ({ ...prev, isLoading: true, error: null }));
       try {
-        // TODO: Replace with actual API call when backend is ready
+        // Demo signup support - create demo user accounts
+        if (email && password && username) {
+          const demoUser: User = {
+            id: `user-${Date.now()}`,
+            email,
+            username,
+            displayName: username,
+            bio: '',
+            createdAt: new Date().toISOString(),
+            updatedAt: new Date().toISOString(),
+          };
+          const demoToken = 'demo-token-' + Date.now();
+
+          authStorage.setToken(demoToken);
+          authStorage.setUser(demoUser);
+
+          setAuthState({
+            user: demoUser,
+            token: demoToken,
+            isLoading: false,
+            error: null,
+          });
+          return;
+        }
+
+        // Regular API call when backend is ready
         const response = await apiClient.post<{
           user: User;
           token: string;
-        }>('/auth/signup', { email, password, displayName });
+        }>('/auth/signup', { email, password, username });
 
         const { user, token } = response;
 

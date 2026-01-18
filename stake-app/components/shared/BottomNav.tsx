@@ -1,29 +1,39 @@
 'use client';
 
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import { Home, Compass, Plus, Users, User } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const TABS = [
   { label: 'Home', href: '/home', icon: Home },
   { label: 'Explore', href: '/explore', icon: Compass },
-  { label: 'Add Bet', href: '/create-bet', icon: Plus, special: true },
+  { label: 'Add Bet', href: '#', icon: Plus, special: true, isModal: true },
   { label: 'Circles', href: '/circles', icon: Users },
   { label: 'Profile', href: '/profile', icon: User },
 ];
 
-export function BottomNav() {
+interface BottomNavProps {
+  onCreateBetClick?: () => void;
+}
+
+export function BottomNav({ onCreateBetClick }: BottomNavProps) {
   const pathname = usePathname();
+  const router = useRouter();
 
   const isActive = (href: string): boolean => {
-    if (href === '/create-bet') {
-      return pathname === '/create-bet';
-    }
     if (href === '/circles') {
       return pathname === '/circles' || pathname.startsWith('/circles/');
     }
     return pathname === href;
+  };
+
+  const handleTabClick = (tab: typeof TABS[0]) => {
+    if (tab.isModal) {
+      onCreateBetClick?.();
+    } else {
+      router.push(tab.href);
+    }
   };
 
   return (
@@ -32,12 +42,12 @@ export function BottomNav() {
         <div className="flex items-center justify-around h-20">
           {TABS.map((tab) => {
             const Icon = tab.icon;
-            const active = isActive(tab.href);
+            const active = !tab.isModal && isActive(tab.href);
 
             return (
-              <Link
+              <button
                 key={tab.href}
-                href={tab.href}
+                onClick={() => handleTabClick(tab)}
                 className={cn(
                   'flex flex-col items-center justify-center w-full h-20 transition-colors',
                   active
@@ -53,7 +63,7 @@ export function BottomNav() {
                   )}
                 />
                 <span className="text-xs font-medium">{tab.label}</span>
-              </Link>
+              </button>
             );
           })}
         </div>

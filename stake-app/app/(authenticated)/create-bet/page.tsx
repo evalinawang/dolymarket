@@ -1,24 +1,20 @@
 'use client';
 
-import { PageShell } from '@/components/shared/PageShell';
+import { useRouter } from 'next/navigation';
+import { useEffect } from 'react';
 
 export default function CreateBetPage() {
+  const router = useRouter();
+
+  // This page serves as a route but the actual create bet is via modal
+  // Redirect to home and let the modal be triggered from bottom nav
+  useEffect(() => {
+    router.replace('/home');
+  }, [router]);
+
   return (
-    <PageShell
-      header={
-        <div className="p-4">
-          <h1 className="text-2xl font-bold">Create Bet</h1>
-        </div>
-      }
-    >
-      <div className="p-4 space-y-4">
-        <div className="bg-white dark:bg-slate-900 rounded-lg p-4 border border-gray-200 dark:border-gray-800">
-          <h2 className="font-semibold mb-2">New Bet Form</h2>
-          <p className="text-sm text-gray-600 dark:text-gray-400">
-            Create a new bet form coming soon...
-          </p>
-        </div>
-      </div>
-    </PageShell>
+    <div className="flex items-center justify-center min-h-screen">
+      <p>Redirecting...</p>
+    </div>
   );
 }
