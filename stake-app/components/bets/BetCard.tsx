@@ -12,8 +12,11 @@ interface BetCardProps {
 
 export function BetCard({ bet, circle }: BetCardProps) {
   const router = useRouter();
-  const deadlineDate = new Date(bet.deadline);
-  const isDeadlinePassed = isPast(deadlineDate);
+  
+  // Safely parse deadline - handle invalid dates
+  const deadlineDate = bet.deadline ? new Date(bet.deadline) : new Date();
+  const isValidDate = !isNaN(deadlineDate.getTime());
+  const isDeadlinePassed = isValidDate && isPast(deadlineDate);
 
   return (
     <button
@@ -63,18 +66,20 @@ export function BetCard({ bet, circle }: BetCardProps) {
       {/* Card Body with Metadata */}
       <div className="p-4 space-y-3">
         {/* Deadline */}
-        <div className="flex items-center gap-2 text-sm">
-          <Clock size={16} className="text-gray-400 dark:text-gray-600 flex-shrink-0" />
-          <span className="text-gray-600 dark:text-gray-400">
-            {isDeadlinePassed ? (
-              <span className="text-red-600 dark:text-red-400 font-semibold">
-                Deadline passed
-              </span>
-            ) : (
-              formatDistanceToNow(deadlineDate, { addSuffix: true })
-            )}
-          </span>
-        </div>
+        {isValidDate && (
+          <div className="flex items-center gap-2 text-sm">
+            <Clock size={16} className="text-gray-400 dark:text-gray-600 flex-shrink-0" />
+            <span className="text-gray-600 dark:text-gray-400">
+              {isDeadlinePassed ? (
+                <span className="text-red-600 dark:text-red-400 font-semibold">
+                  Deadline passed
+                </span>
+              ) : (
+                formatDistanceToNow(deadlineDate, { addSuffix: true })
+              )}
+            </span>
+          </div>
+        )}
 
         {/* Stake */}
         {bet.stakeAmount && (
@@ -87,11 +92,13 @@ export function BetCard({ bet, circle }: BetCardProps) {
         )}
 
         {/* Options Count */}
-        <div className="flex items-center gap-2 text-sm">
-          <span className="text-gray-600 dark:text-gray-400">
-            {bet.options.length} options
-          </span>
-        </div>
+        {bet.options && bet.options.length > 0 && (
+          <div className="flex items-center gap-2 text-sm">
+            <span className="text-gray-600 dark:text-gray-400">
+              {bet.options.length} options
+            </span>
+          </div>
+        )}
 
         {/* Privacy and Proof Badges */}
         <div className="flex flex-wrap gap-2 pt-2">

@@ -1,0 +1,859 @@
+{
+  "users": [
+    {
+      "id": "user-001",
+      "username": "priyapremed",
+      "email": "priya@college.app",
+      "displayName": "Priya Sharma",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=priyapremed",
+      "bio": "Pre-med senior, debate team captain 🩺",
+      "createdAt": "2024-09-01T00:00:00Z",
+      "updatedAt": "2025-01-17T00:00:00Z"
+    },
+    {
+      "id": "user-002",
+      "username": "jakethemaker",
+      "email": "jake@college.app",
+      "displayName": "Jake Chen",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=jakethemaker",
+      "bio": "Comp Sci major, hackathon junkie 💻",
+      "createdAt": "2024-08-15T00:00:00Z",
+      "updatedAt": "2025-01-16T00:00:00Z"
+    },
+    {
+      "id": "user-003",
+      "username": "sophiasings",
+      "email": "sophia@college.app",
+      "displayName": "Sophia Martinez",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=sophiasings",
+      "bio": "Music performance major 🎵",
+      "createdAt": "2024-07-10T00:00:00Z",
+      "updatedAt": "2025-01-15T00:00:00Z"
+    },
+    {
+      "id": "user-004",
+      "username": "adidasjock",
+      "email": "aditya@college.app",
+      "displayName": "Aditya Patel",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=adidasjock",
+      "bio": "Track & field athlete, always training 🏃",
+      "createdAt": "2024-06-20T00:00:00Z",
+      "updatedAt": "2025-01-14T00:00:00Z"
+    },
+    {
+      "id": "user-005",
+      "username": "emmaengineer",
+      "email": "emma@college.app",
+      "displayName": "Emma Thompson",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=emmaengineer",
+      "bio": "Civil engineering, coffee addict ☕",
+      "createdAt": "2024-09-05T00:00:00Z",
+      "updatedAt": "2025-01-17T00:00:00Z"
+    },
+    {
+      "id": "user-006",
+      "username": "markeyefilm",
+      "email": "mark@college.app",
+      "displayName": "Mark Williams",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=markeyefilm",
+      "bio": "Film major, aspiring director 🎬",
+      "createdAt": "2024-08-01T00:00:00Z",
+      "updatedAt": "2025-01-13T00:00:00Z"
+    },
+    {
+      "id": "user-007",
+      "username": "leahleads",
+      "email": "leah@college.app",
+      "displayName": "Leah Johnson",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=leahleads",
+      "bio": "Student body treasurer, organized chaos 📊",
+      "createdAt": "2024-07-22T00:00:00Z",
+      "updatedAt": "2025-01-12T00:00:00Z"
+    },
+    {
+      "id": "user-008",
+      "username": "rajanreads",
+      "email": "rajan@college.app",
+      "displayName": "Rajan Kumar",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=rajanreads",
+      "bio": "Literature nerd, bookstore regular 📚",
+      "createdAt": "2024-09-10T00:00:00Z",
+      "updatedAt": "2025-01-11T00:00:00Z"
+    }
+  ],
+  "circles": [
+    {
+      "id": "circle-001",
+      "name": "Dorm Squad",
+      "description": "Senior year roommates - Priya, Jake, Emma in Harrison Hall",
+      "imageUrl": "https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=200&h=200&fit=crop",
+      "createdBy": "user-001",
+      "createdAt": "2024-09-01T00:00:00Z",
+      "updatedAt": "2025-01-17T00:00:00Z"
+    },
+    {
+      "id": "circle-002",
+      "name": "Honors Thesis Group",
+      "description": "Senior capstone project buddies",
+      "imageUrl": "https://images.unsplash.com/photo-1427504494785-405a6e44e444?w=200&h=200&fit=crop",
+      "createdBy": "user-001",
+      "createdAt": "2024-09-15T00:00:00Z",
+      "updatedAt": "2025-01-16T00:00:00Z"
+    },
+    {
+      "id": "circle-003",
+      "name": "Campus Athletes",
+      "description": "Sports clubs and varsity team members",
+      "imageUrl": "https://images.unsplash.com/photo-1517836357463-d25ddfcbf042?w=200&h=200&fit=crop",
+      "createdBy": "user-004",
+      "createdAt": "2024-08-20T00:00:00Z",
+      "updatedAt": "2025-01-15T00:00:00Z"
+    },
+    {
+      "id": "circle-004",
+      "name": "Arts & Culture Club",
+      "description": "Musicians, filmmakers, performers",
+      "imageUrl": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=200&h=200&fit=crop",
+      "createdBy": "user-003",
+      "createdAt": "2024-07-30T00:00:00Z",
+      "updatedAt": "2025-01-14T00:00:00Z"
+    }
+  ],
+  "circleMembers": [
+    {
+      "circleId": "circle-001",
+      "userId": "user-001",
+      "joinedAt": "2024-09-01T00:00:00Z"
+    },
+    {
+      "circleId": "circle-001",
+      "userId": "user-002",
+      "joinedAt": "2024-09-02T00:00:00Z"
+    },
+    {
+      "circleId": "circle-001",
+      "userId": "user-005",
+      "joinedAt": "2024-09-03T00:00:00Z"
+    },
+    {
+      "circleId": "circle-002",
+      "userId": "user-001",
+      "joinedAt": "2024-09-15T00:00:00Z"
+    },
+    {
+      "circleId": "circle-002",
+      "userId": "user-007",
+      "joinedAt": "2024-09-16T00:00:00Z"
+    },
+    {
+      "circleId": "circle-002",
+      "userId": "user-008",
+      "joinedAt": "2024-09-17T00:00:00Z"
+    },
+    {
+      "circleId": "circle-003",
+      "userId": "user-004",
+      "joinedAt": "2024-08-20T00:00:00Z"
+    },
+    {
+      "circleId": "circle-003",
+      "userId": "user-002",
+      "joinedAt": "2024-09-05T00:00:00Z"
+    },
+    {
+      "circleId": "circle-004",
+      "userId": "user-003",
+      "joinedAt": "2024-07-30T00:00:00Z"
+    },
+    {
+      "circleId": "circle-004",
+      "userId": "user-006",
+      "joinedAt": "2024-08-01T00:00:00Z"
+    }
+  ],
+  "bets": [
+    {
+      "id": "bet-001",
+      "title": "Pass Organic Chem Midterm",
+      "description": "Will Priya score 85+ on the organic chemistry midterm?",
+      "createdBy": "user-001",
+      "circleId": "circle-001",
+      "status": "RESOLVED",
+      "deadline": "2025-01-20T23:59:00Z",
+      "stakeAmount": 5,
+      "proofRequirement": "PHOTO",
+      "privacy": "CIRCLE_PRIVATE",
+      "resolvedAt": "2025-01-21T10:00:00Z",
+      "resolutionDetails": {
+        "winningOptionId": "opt-001",
+        "winnerIds": ["user-001"]
+      },
+      "createdAt": "2025-01-10T00:00:00Z",
+      "updatedAt": "2025-01-21T10:00:00Z"
+    },
+    {
+      "id": "bet-002",
+      "title": "Hackathon Win",
+      "description": "Will Jake's team place in top 3 at winter hackathon?",
+      "createdBy": "user-002",
+      "circleId": "circle-001",
+      "status": "OPEN",
+      "deadline": "2025-02-15T23:59:00Z",
+      "stakeAmount": 15,
+      "proofRequirement": "PHOTO",
+      "privacy": "FRIENDS_PUBLIC",
+      "createdAt": "2025-01-08T00:00:00Z",
+      "updatedAt": "2025-01-17T00:00:00Z"
+    },
+    {
+      "id": "bet-003",
+      "title": "Spring Concert Sellout",
+      "description": "Will Sophia's ensemble perform to sold-out crowd?",
+      "createdBy": "user-003",
+      "circleId": "circle-004",
+      "status": "LOCKED",
+      "deadline": "2025-03-15T23:59:00Z",
+      "stakeAmount": 0,
+      "proofRequirement": "NONE",
+      "privacy": "CIRCLE_PRIVATE",
+      "createdAt": "2025-01-05T00:00:00Z",
+      "updatedAt": "2025-01-17T00:00:00Z"
+    },
+    {
+      "id": "bet-004",
+      "title": "Track Meet PR",
+      "description": "Can Aditya break his 400m personal record this season?",
+      "createdBy": "user-004",
+      "circleId": "circle-003",
+      "status": "OPEN",
+      "deadline": "2025-04-01T23:59:00Z",
+      "stakeAmount": 10,
+      "proofRequirement": "PHOTO",
+      "privacy": "FRIENDS_PUBLIC",
+      "createdAt": "2025-01-12T00:00:00Z",
+      "updatedAt": "2025-01-17T00:00:00Z"
+    },
+    {
+      "id": "bet-005",
+      "title": "Thesis Defense Success",
+      "description": "Will Emma's thesis committee approve without revisions?",
+      "createdBy": "user-005",
+      "circleId": "circle-002",
+      "status": "LOCKED",
+      "deadline": "2025-02-28T23:59:00Z",
+      "stakeAmount": 20,
+      "proofRequirement": "NONE",
+      "privacy": "CIRCLE_PRIVATE",
+      "createdAt": "2025-01-02T00:00:00Z",
+      "updatedAt": "2025-01-17T00:00:00Z"
+    },
+    {
+      "id": "bet-006",
+      "title": "Short Film Festival",
+      "description": "Will Mark's short film be accepted to Film Festival?",
+      "createdBy": "user-006",
+      "circleId": "circle-004",
+      "status": "OPEN",
+      "deadline": "2025-02-01T23:59:00Z",
+      "stakeAmount": 10,
+      "proofRequirement": "NONE",
+      "privacy": "PUBLIC",
+      "createdAt": "2025-01-07T00:00:00Z",
+      "updatedAt": "2025-01-17T00:00:00Z"
+    },
+    {
+      "id": "bet-007",
+      "title": "Spring Fling Ticket Sales",
+      "description": "Will Spring Fling sell 2000+ tickets in first week?",
+      "createdBy": "user-007",
+      "circleId": "circle-002",
+      "status": "OPEN",
+      "deadline": "2025-02-07T23:59:00Z",
+      "stakeAmount": 0,
+      "proofRequirement": "NONE",
+      "privacy": "FRIENDS_PUBLIC",
+      "createdAt": "2025-01-09T00:00:00Z",
+      "updatedAt": "2025-01-17T00:00:00Z"
+    },
+    {
+      "id": "bet-008",
+      "title": "Book Club Read Completion",
+      "description": "Will the book club finish 'Invisible Man' by deadline?",
+      "createdBy": "user-008",
+      "circleId": "circle-002",
+      "status": "RESOLVED",
+      "deadline": "2025-01-31T23:59:00Z",
+      "stakeAmount": 0,
+      "proofRequirement": "NONE",
+      "privacy": "CIRCLE_PRIVATE",
+      "resolvedAt": "2025-02-01T18:00:00Z",
+      "resolutionDetails": {
+        "winningOptionId": "opt-016",
+        "winnerIds": ["user-008", "user-007"]
+      },
+      "createdAt": "2025-01-01T00:00:00Z",
+      "updatedAt": "2025-02-01T18:00:00Z"
+    },
+    {
+      "id": "bet-009",
+      "title": "Roommate Movie Marathon",
+      "description": "Can dorm squad watch 5 movies in one weekend without falling asleep?",
+      "createdBy": "user-001",
+      "circleId": "circle-001",
+      "status": "RESOLVED",
+      "deadline": "2025-01-19T23:59:00Z",
+      "stakeAmount": 5,
+      "proofRequirement": "VIDEO",
+      "privacy": "CIRCLE_PRIVATE",
+      "resolvedAt": "2025-01-20T14:30:00Z",
+      "resolutionDetails": {
+        "winningOptionId": "opt-018",
+        "winnerIds": ["user-002"]
+      },
+      "createdAt": "2024-12-28T00:00:00Z",
+      "updatedAt": "2025-01-20T14:30:00Z"
+    },
+    {
+      "id": "bet-010",
+      "title": "Midterm Week Survival",
+      "description": "Will Priya maintain 8+ hours sleep during midterm week?",
+      "createdBy": "user-001",
+      "circleId": "circle-001",
+      "status": "RESOLVED",
+      "deadline": "2025-01-24T23:59:00Z",
+      "stakeAmount": 10,
+      "proofRequirement": "PHOTO",
+      "privacy": "CIRCLE_PRIVATE",
+      "resolvedAt": "2025-01-25T09:00:00Z",
+      "resolutionDetails": {
+        "winningOptionId": "opt-020",
+        "winnerIds": ["user-005"]
+      },
+      "createdAt": "2025-01-15T00:00:00Z",
+      "updatedAt": "2025-01-25T09:00:00Z"
+    },
+    {
+      "id": "bet-011",
+      "title": "Campus Debate Championship",
+      "description": "Will debate team make final four at nationals?",
+      "createdBy": "user-001",
+      "circleId": "circle-002",
+      "status": "OPEN",
+      "deadline": "2025-03-31T23:59:00Z",
+      "stakeAmount": 25,
+      "proofRequirement": "NONE",
+      "privacy": "PUBLIC",
+      "createdAt": "2025-01-06T00:00:00Z",
+      "updatedAt": "2025-01-17T00:00:00Z"
+    },
+    {
+      "id": "bet-012",
+      "title": "Cafeteria Food Quality",
+      "description": "Will new dining hall get 4+ stars in student survey?",
+      "createdBy": "user-007",
+      "circleId": "circle-001",
+      "status": "OPEN",
+      "deadline": "2025-02-20T23:59:00Z",
+      "stakeAmount": 0,
+      "proofRequirement": "NONE",
+      "privacy": "FRIENDS_PUBLIC",
+      "createdAt": "2025-01-14T00:00:00Z",
+      "updatedAt": "2025-01-17T00:00:00Z"
+    }
+  ],
+  "betOptions": [
+    {
+      "id": "opt-001",
+      "betId": "bet-001",
+      "label": "Yes, 85+ on exam"
+    },
+    {
+      "id": "opt-002",
+      "betId": "bet-001",
+      "label": "No, below 85"
+    },
+    {
+      "id": "opt-003",
+      "betId": "bet-002",
+      "label": "Yes, top 3"
+    },
+    {
+      "id": "opt-004",
+      "betId": "bet-002",
+      "label": "No, didn't place"
+    },
+    {
+      "id": "opt-005",
+      "betId": "bet-003",
+      "label": "Yes, soldout"
+    },
+    {
+      "id": "opt-006",
+      "betId": "bet-003",
+      "label": "No, unsold tickets"
+    },
+    {
+      "id": "opt-007",
+      "betId": "bet-004",
+      "label": "Yes, personal record"
+    },
+    {
+      "id": "opt-008",
+      "betId": "bet-004",
+      "label": "No, same time"
+    },
+    {
+      "id": "opt-009",
+      "betId": "bet-005",
+      "label": "Yes, approved first try"
+    },
+    {
+      "id": "opt-010",
+      "betId": "bet-005",
+      "label": "No, revisions needed"
+    },
+    {
+      "id": "opt-011",
+      "betId": "bet-006",
+      "label": "Yes, film accepted"
+    },
+    {
+      "id": "opt-012",
+      "betId": "bet-006",
+      "label": "No, rejected"
+    },
+    {
+      "id": "opt-013",
+      "betId": "bet-007",
+      "label": "Yes, 2000+ tickets"
+    },
+    {
+      "id": "opt-014",
+      "betId": "bet-007",
+      "label": "No, fewer tickets"
+    },
+    {
+      "id": "opt-015",
+      "betId": "bet-008",
+      "label": "Yes, finished"
+    },
+    {
+      "id": "opt-016",
+      "betId": "bet-008",
+      "label": "Finished book"
+    },
+    {
+      "id": "opt-017",
+      "betId": "bet-009",
+      "label": "Yes, stayed awake"
+    },
+    {
+      "id": "opt-018",
+      "betId": "bet-009",
+      "label": "No, fell asleep"
+    },
+    {
+      "id": "opt-019",
+      "betId": "bet-010",
+      "label": "Yes, 8+ hours"
+    },
+    {
+      "id": "opt-020",
+      "betId": "bet-010",
+      "label": "No, less sleep"
+    },
+    {
+      "id": "opt-021",
+      "betId": "bet-011",
+      "label": "Yes, final four"
+    },
+    {
+      "id": "opt-022",
+      "betId": "bet-011",
+      "label": "No, earlier exit"
+    },
+    {
+      "id": "opt-023",
+      "betId": "bet-012",
+      "label": "Yes, 4+ stars"
+    },
+    {
+      "id": "opt-024",
+      "betId": "bet-012",
+      "label": "No, lower rating"
+    }
+  ],
+  "betParticipants": [
+    {
+      "id": "part-001",
+      "betId": "bet-001",
+      "userId": "user-001",
+      "selectedOptionId": "opt-001",
+      "status": "won",
+      "createdAt": "2025-01-10T12:00:00Z"
+    },
+    {
+      "id": "part-002",
+      "betId": "bet-001",
+      "userId": "user-002",
+      "selectedOptionId": "opt-002",
+      "status": "lost",
+      "createdAt": "2025-01-11T14:30:00Z"
+    },
+    {
+      "id": "part-003",
+      "betId": "bet-002",
+      "userId": "user-002",
+      "selectedOptionId": "opt-003",
+      "status": "pending",
+      "createdAt": "2025-01-09T10:00:00Z"
+    },
+    {
+      "id": "part-004",
+      "betId": "bet-002",
+      "userId": "user-001",
+      "selectedOptionId": "opt-003",
+      "status": "pending",
+      "createdAt": "2025-01-09T11:00:00Z"
+    },
+    {
+      "id": "part-005",
+      "betId": "bet-003",
+      "userId": "user-003",
+      "selectedOptionId": "opt-005",
+      "status": "pending",
+      "createdAt": "2025-01-06T09:00:00Z"
+    },
+    {
+      "id": "part-006",
+      "betId": "bet-003",
+      "userId": "user-006",
+      "selectedOptionId": "opt-006",
+      "status": "pending",
+      "createdAt": "2025-01-07T10:30:00Z"
+    },
+    {
+      "id": "part-007",
+      "betId": "bet-004",
+      "userId": "user-004",
+      "selectedOptionId": "opt-007",
+      "status": "pending",
+      "createdAt": "2025-01-13T08:00:00Z"
+    },
+    {
+      "id": "part-008",
+      "betId": "bet-004",
+      "userId": "user-002",
+      "selectedOptionId": "opt-008",
+      "status": "pending",
+      "createdAt": "2025-01-14T15:00:00Z"
+    },
+    {
+      "id": "part-009",
+      "betId": "bet-005",
+      "userId": "user-005",
+      "selectedOptionId": "opt-009",
+      "status": "pending",
+      "createdAt": "2025-01-03T11:00:00Z"
+    },
+    {
+      "id": "part-010",
+      "betId": "bet-006",
+      "userId": "user-006",
+      "selectedOptionId": "opt-011",
+      "status": "pending",
+      "createdAt": "2025-01-08T13:00:00Z"
+    },
+    {
+      "id": "part-011",
+      "betId": "bet-007",
+      "userId": "user-007",
+      "selectedOptionId": "opt-013",
+      "status": "pending",
+      "createdAt": "2025-01-10T09:00:00Z"
+    },
+    {
+      "id": "part-012",
+      "betId": "bet-008",
+      "userId": "user-008",
+      "selectedOptionId": "opt-016",
+      "status": "won",
+      "createdAt": "2025-01-02T10:00:00Z"
+    },
+    {
+      "id": "part-013",
+      "betId": "bet-008",
+      "userId": "user-007",
+      "selectedOptionId": "opt-016",
+      "status": "won",
+      "createdAt": "2025-01-03T14:00:00Z"
+    },
+    {
+      "id": "part-014",
+      "betId": "bet-009",
+      "userId": "user-001",
+      "selectedOptionId": "opt-017",
+      "status": "lost",
+      "createdAt": "2024-12-29T16:00:00Z"
+    },
+    {
+      "id": "part-015",
+      "betId": "bet-009",
+      "userId": "user-002",
+      "selectedOptionId": "opt-018",
+      "status": "won",
+      "createdAt": "2024-12-30T12:00:00Z"
+    },
+    {
+      "id": "part-016",
+      "betId": "bet-010",
+      "userId": "user-001",
+      "selectedOptionId": "opt-019",
+      "status": "lost",
+      "createdAt": "2025-01-16T09:00:00Z"
+    },
+    {
+      "id": "part-017",
+      "betId": "bet-010",
+      "userId": "user-005",
+      "selectedOptionId": "opt-020",
+      "status": "won",
+      "createdAt": "2025-01-16T10:00:00Z"
+    },
+    {
+      "id": "part-018",
+      "betId": "bet-011",
+      "userId": "user-001",
+      "selectedOptionId": "opt-021",
+      "status": "pending",
+      "createdAt": "2025-01-07T11:00:00Z"
+    },
+    {
+      "id": "part-019",
+      "betId": "bet-012",
+      "userId": "user-007",
+      "selectedOptionId": "opt-023",
+      "status": "pending",
+      "createdAt": "2025-01-15T08:00:00Z"
+    },
+    {
+      "id": "part-020",
+      "betId": "bet-012",
+      "userId": "user-001",
+      "selectedOptionId": "opt-024",
+      "status": "pending",
+      "createdAt": "2025-01-15T09:00:00Z"
+    }
+  ],
+  "stakeInstances": [
+    {
+      "id": "stake-001",
+      "betId": "bet-001",
+      "userId": "user-002",
+      "participantId": "part-002",
+      "amount": 5,
+      "status": "pending",
+      "proofRequirement": "PHOTO",
+      "createdAt": "2025-01-21T12:00:00Z"
+    },
+    {
+      "id": "stake-002",
+      "betId": "bet-009",
+      "userId": "user-001",
+      "participantId": "part-014",
+      "amount": 5,
+      "status": "completed",
+      "proofRequirement": "VIDEO",
+      "proofUploadId": "proof-001",
+      "completedAt": "2025-01-20T16:00:00Z",
+      "createdAt": "2025-01-20T15:00:00Z"
+    },
+    {
+      "id": "stake-003",
+      "betId": "bet-010",
+      "userId": "user-001",
+      "participantId": "part-016",
+      "amount": 10,
+      "status": "pending",
+      "proofRequirement": "PHOTO",
+      "createdAt": "2025-01-25T10:00:00Z"
+    }
+  ],
+  "proofUploads": [
+    {
+      "id": "proof-001",
+      "betId": "bet-009",
+      "stakeInstanceId": "stake-002",
+      "userId": "user-001",
+      "proofUrl": "https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?w=500&h=500&fit=crop",
+      "proofType": "VIDEO",
+      "uploadedAt": "2025-01-20T16:00:00Z"
+    },
+    {
+      "id": "proof-002",
+      "betId": "bet-001",
+      "stakeInstanceId": "stake-001",
+      "userId": "user-001",
+      "proofUrl": "https://images.unsplash.com/photo-1516321318423-f06f70d504f0?w=500&h=500&fit=crop",
+      "proofType": "PHOTO",
+      "uploadedAt": "2025-01-21T13:00:00Z"
+    },
+    {
+      "id": "proof-003",
+      "betId": "bet-008",
+      "stakeInstanceId": "stake-proof-003",
+      "userId": "user-008",
+      "proofUrl": "https://images.unsplash.com/photo-1507842217343-583f20270319?w=500&h=500&fit=crop",
+      "proofType": "PHOTO",
+      "uploadedAt": "2025-02-01T17:30:00Z"
+    }
+  ],
+  "friendships": [
+    {
+      "id": "friend-001",
+      "userId": "user-001",
+      "friendId": "user-002",
+      "createdAt": "2024-09-02T00:00:00Z"
+    },
+    {
+      "id": "friend-002",
+      "userId": "user-001",
+      "friendId": "user-005",
+      "createdAt": "2024-09-03T00:00:00Z"
+    },
+    {
+      "id": "friend-003",
+      "userId": "user-002",
+      "friendId": "user-004",
+      "createdAt": "2024-09-15T00:00:00Z"
+    },
+    {
+      "id": "friend-004",
+      "userId": "user-003",
+      "friendId": "user-006",
+      "createdAt": "2024-08-01T00:00:00Z"
+    },
+    {
+      "id": "friend-005",
+      "userId": "user-004",
+      "friendId": "user-007",
+      "createdAt": "2024-08-25T00:00:00Z"
+    },
+    {
+      "id": "friend-006",
+      "userId": "user-007",
+      "friendId": "user-008",
+      "createdAt": "2024-09-10T00:00:00Z"
+    },
+    {
+      "id": "friend-007",
+      "userId": "user-005",
+      "friendId": "user-006",
+      "createdAt": "2024-09-12T00:00:00Z"
+    }
+  ],
+  "follows": [
+    {
+      "id": "follow-001",
+      "followerId": "user-001",
+      "followingId": "user-004",
+      "createdAt": "2025-01-10T00:00:00Z"
+    },
+    {
+      "id": "follow-002",
+      "followerId": "user-002",
+      "followingId": "user-003",
+      "createdAt": "2025-01-08T00:00:00Z"
+    },
+    {
+      "id": "follow-003",
+      "followerId": "user-003",
+      "followingId": "user-006",
+      "createdAt": "2024-12-20T00:00:00Z"
+    },
+    {
+      "id": "follow-004",
+      "followerId": "user-005",
+      "followingId": "user-001",
+      "createdAt": "2025-01-15T00:00:00Z"
+    },
+    {
+      "id": "follow-005",
+      "followerId": "user-008",
+      "followingId": "user-007",
+      "createdAt": "2025-01-12T00:00:00Z"
+    }
+  ],
+  "identityBadges": [
+    {
+      "id": "badge-001",
+      "userId": "user-001",
+      "badgeName": "Gold Badge",
+      "pillarScores": {
+        "Express": 88,
+        "Protect": 85,
+        "Create": 92,
+        "Evolve": 90,
+        "Change": 87
+      },
+      "totalScore": 88,
+      "verifiedAt": "2025-01-15T00:00:00Z"
+    },
+    {
+      "id": "badge-002",
+      "userId": "user-002",
+      "badgeName": "Silver Badge",
+      "pillarScores": {
+        "Express": 80,
+        "Protect": 78,
+        "Create": 85,
+        "Evolve": 82,
+        "Change": 79
+      },
+      "totalScore": 81,
+      "verifiedAt": "2025-01-12T00:00:00Z"
+    },
+    {
+      "id": "badge-003",
+      "userId": "user-003",
+      "badgeName": "Silver Badge",
+      "pillarScores": {
+        "Express": 92,
+        "Protect": 75,
+        "Create": 88,
+        "Evolve": 85,
+        "Change": 82
+      },
+      "totalScore": 84,
+      "verifiedAt": "2025-01-10T00:00:00Z"
+    },
+    {
+      "id": "badge-004",
+      "userId": "user-004",
+      "badgeName": "Gold Badge",
+      "pillarScores": {
+        "Express": 86,
+        "Protect": 88,
+        "Create": 80,
+        "Evolve": 89,
+        "Change": 87
+      },
+      "totalScore": 86,
+      "verifiedAt": "2025-01-14T00:00:00Z"
+    },
+    {
+      "id": "badge-005",
+      "userId": "user-007",
+      "badgeName": "Platinum Badge",
+      "pillarScores": {
+        "Express": 94,
+        "Protect": 92,
+        "Create": 96,
+        "Evolve": 95,
+        "Change": 93
+      },
+      "totalScore": 94,
+      "verifiedAt": "2025-01-08T00:00:00Z"
+    }
+  ]
+}

@@ -34,9 +34,9 @@ export default function HomePage() {
               </div>
 
               <div className="space-y-2">
-                {pendingStakesData.map((item, index) => (
+                {pendingStakesData.map((item) => (
                   <PendingStakeCard
-                    key={index}
+                    key={`${item.bet.id}-${item.participant.id}`}
                     bet={item.bet}
                     participant={item.participant}
                   />
@@ -73,9 +73,9 @@ export default function HomePage() {
               />
             ) : (
               <div className="space-y-2">
-                {feedBets.map((bet) => (
+                {feedBets && Array.isArray(feedBets) && feedBets.map((bet, index) => (
                   <BetCard
-                    key={bet.id}
+                    key={`${bet.id}-${index}`}
                     bet={bet}
                     circle={
                       bet.circleId

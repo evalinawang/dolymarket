@@ -31,10 +31,10 @@ export function AuthGuard({ children }: { children: React.ReactNode }) {
 
     if (isProtected && !isAuthenticated) {
       // Redirect to login if accessing protected route without auth
-      router.replace('/login');
+      router.push('/login');
     } else if (isAuthRoute && isAuthenticated) {
       // Redirect to home if already authenticated and trying to access login/signup
-      router.replace('/home');
+      router.push('/home');
     }
   }, [isAuthenticated, isLoading, pathname, router]);
 

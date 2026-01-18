@@ -1,0 +1,854 @@
+{
+  "users": [
+    {
+      "id": "user-001",
+      "username": "anthonynfl",
+      "email": "anthony@rumble.app",
+      "displayName": "Anthony Reeves",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=anthonynfl",
+      "bio": "NFL fantasy junkie, never pick the browns 🏈",
+      "createdAt": "2024-08-01T00:00:00Z",
+      "updatedAt": "2025-01-17T00:00:00Z"
+    },
+    {
+      "id": "user-002",
+      "username": "serenaslam",
+      "email": "serena@rumble.app",
+      "displayName": "Serena Williams",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=serenaslam",
+      "bio": "Tennis analyst, Wimbledon is my favorite season 🎾",
+      "createdAt": "2024-07-15T00:00:00Z",
+      "updatedAt": "2025-01-16T00:00:00Z"
+    },
+    {
+      "id": "user-003",
+      "username": "travishoops",
+      "email": "travis@rumble.app",
+      "displayName": "Travis Johnson",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=travishoops",
+      "bio": "NBA stats obsessed, never misses a game 🏀",
+      "createdAt": "2024-06-20T00:00:00Z",
+      "updatedAt": "2025-01-15T00:00:00Z"
+    },
+    {
+      "id": "user-004",
+      "username": "oliviatvfan",
+      "email": "olivia@rumble.app",
+      "displayName": "Olivia Chen",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=oliviatvfan",
+      "bio": "Reality TV connoisseur, spoiler alerts incoming 📺",
+      "createdAt": "2024-09-10T00:00:00Z",
+      "updatedAt": "2025-01-14T00:00:00Z"
+    },
+    {
+      "id": "user-005",
+      "username": "marcusmusic",
+      "email": "marcus@rumble.app",
+      "displayName": "Marcus Thompson",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=marcusmusic",
+      "bio": "Music producer, Grammys this year or bust 🎙️",
+      "createdAt": "2024-08-25T00:00:00Z",
+      "updatedAt": "2025-01-13T00:00:00Z"
+    },
+    {
+      "id": "user-006",
+      "username": "jessicajames",
+      "email": "jessica@rumble.app",
+      "displayName": "Jessica Moore",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=jessicajames",
+      "bio": "Action movie buff, Marvel is life 🦸",
+      "createdAt": "2024-07-05T00:00:00Z",
+      "updatedAt": "2025-01-12T00:00:00Z"
+    },
+    {
+      "id": "user-007",
+      "username": "dannyboxing",
+      "email": "danny@rumble.app",
+      "displayName": "Danny Ortega",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=dannyboxing",
+      "bio": "Boxing analyst, underdog predictor 🥊",
+      "createdAt": "2024-08-10T00:00:00Z",
+      "updatedAt": "2025-01-11T00:00:00Z"
+    },
+    {
+      "id": "user-008",
+      "username": "rachelreal",
+      "email": "rachel@rumble.app",
+      "displayName": "Rachel Perry",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=rachelreal",
+      "bio": "True crime podcast host, always theorizing 🔍",
+      "createdAt": "2024-09-01T00:00:00Z",
+      "updatedAt": "2025-01-10T00:00:00Z"
+    }
+  ],
+  "circles": [
+    {
+      "id": "circle-001",
+      "name": "Fantasy Football League",
+      "description": "The competitive ones - draft day is sacred",
+      "imageUrl": "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=200&h=200&fit=crop",
+      "createdBy": "user-001",
+      "createdAt": "2024-08-01T00:00:00Z",
+      "updatedAt": "2025-01-17T00:00:00Z"
+    },
+    {
+      "id": "circle-002",
+      "name": "NBA Heads",
+      "description": "Stats, trades, and playoff predictions all day",
+      "imageUrl": "https://images.unsplash.com/photo-1546519638-68711109d298?w=200&h=200&fit=crop",
+      "createdBy": "user-003",
+      "createdAt": "2024-07-10T00:00:00Z",
+      "updatedAt": "2025-01-16T00:00:00Z"
+    },
+    {
+      "id": "circle-003",
+      "name": "Reality TV Insiders",
+      "description": "Survivor, Bachelor, Love Island - we watch them all",
+      "imageUrl": "https://images.unsplash.com/photo-1533709752211-118fcfeae85d?w=200&h=200&fit=crop",
+      "createdBy": "user-004",
+      "createdAt": "2024-09-05T00:00:00Z",
+      "updatedAt": "2025-01-15T00:00:00Z"
+    },
+    {
+      "id": "circle-004",
+      "name": "Entertainment Junkies",
+      "description": "Movies, music, awards shows, celebrity gossip",
+      "imageUrl": "https://images.unsplash.com/photo-1559513676-a05e3e1b66a9?w=200&h=200&fit=crop",
+      "createdBy": "user-005",
+      "createdAt": "2024-08-15T00:00:00Z",
+      "updatedAt": "2025-01-14T00:00:00Z"
+    }
+  ],
+  "circleMembers": [
+    {
+      "circleId": "circle-001",
+      "userId": "user-001",
+      "joinedAt": "2024-08-01T00:00:00Z"
+    },
+    {
+      "circleId": "circle-001",
+      "userId": "user-003",
+      "joinedAt": "2024-08-05T00:00:00Z"
+    },
+    {
+      "circleId": "circle-001",
+      "userId": "user-007",
+      "joinedAt": "2024-08-10T00:00:00Z"
+    },
+    {
+      "circleId": "circle-002",
+      "userId": "user-003",
+      "joinedAt": "2024-07-10T00:00:00Z"
+    },
+    {
+      "circleId": "circle-002",
+      "userId": "user-001",
+      "joinedAt": "2024-07-15T00:00:00Z"
+    },
+    {
+      "circleId": "circle-002",
+      "userId": "user-002",
+      "joinedAt": "2024-07-20T00:00:00Z"
+    },
+    {
+      "circleId": "circle-003",
+      "userId": "user-004",
+      "joinedAt": "2024-09-05T00:00:00Z"
+    },
+    {
+      "circleId": "circle-003",
+      "userId": "user-008",
+      "joinedAt": "2024-09-12T00:00:00Z"
+    },
+    {
+      "circleId": "circle-004",
+      "userId": "user-005",
+      "joinedAt": "2024-08-15T00:00:00Z"
+    },
+    {
+      "circleId": "circle-004",
+      "userId": "user-006",
+      "joinedAt": "2024-08-20T00:00:00Z"
+    }
+  ],
+  "bets": [
+    {
+      "id": "bet-001",
+      "title": "Mahomes MVP Season",
+      "description": "Will Patrick Mahomes win NFL MVP this season?",
+      "createdBy": "user-001",
+      "circleId": "circle-001",
+      "status": "LOCKED",
+      "deadline": "2025-02-02T23:59:00Z",
+      "stakeAmount": 20,
+      "proofRequirement": "PHOTO",
+      "privacy": "CIRCLE_PRIVATE",
+      "createdAt": "2025-01-01T00:00:00Z",
+      "updatedAt": "2025-01-17T00:00:00Z"
+    },
+    {
+      "id": "bet-002",
+      "title": "Saquon Super Bowl",
+      "description": "Will Eagles win Super Bowl LIX with Saquon running?",
+      "createdBy": "user-001",
+      "circleId": "circle-001",
+      "status": "LOCKED",
+      "deadline": "2025-02-09T23:59:00Z",
+      "stakeAmount": 50,
+      "proofRequirement": "NONE",
+      "privacy": "FRIENDS_PUBLIC",
+      "createdAt": "2024-12-20T00:00:00Z",
+      "updatedAt": "2025-01-17T00:00:00Z"
+    },
+    {
+      "id": "bet-003",
+      "title": "Luka Triple-Double Average",
+      "description": "Will Luka Doncic average triple-doubles for full season?",
+      "createdBy": "user-003",
+      "circleId": "circle-002",
+      "status": "OPEN",
+      "deadline": "2025-04-13T23:59:00Z",
+      "stakeAmount": 15,
+      "proofRequirement": "NONE",
+      "privacy": "PUBLIC",
+      "createdAt": "2025-01-10T00:00:00Z",
+      "updatedAt": "2025-01-17T00:00:00Z"
+    },
+    {
+      "id": "bet-004",
+      "title": "Giannis Finals MVP",
+      "description": "Will Giannis Antetokounmpo win NBA Finals MVP?",
+      "createdBy": "user-003",
+      "circleId": "circle-002",
+      "status": "OPEN",
+      "deadline": "2025-06-30T23:59:00Z",
+      "stakeAmount": 30,
+      "proofRequirement": "NONE",
+      "privacy": "FRIENDS_PUBLIC",
+      "createdAt": "2025-01-05T00:00:00Z",
+      "updatedAt": "2025-01-17T00:00:00Z"
+    },
+    {
+      "id": "bet-005",
+      "title": "Love Island Winner Prediction",
+      "description": "Will the bombshell couple survive until finale night?",
+      "createdBy": "user-004",
+      "circleId": "circle-003",
+      "status": "RESOLVED",
+      "deadline": "2025-01-22T23:59:00Z",
+      "stakeAmount": 0,
+      "proofRequirement": "NONE",
+      "privacy": "CIRCLE_PRIVATE",
+      "resolvedAt": "2025-01-23T21:00:00Z",
+      "resolutionDetails": {
+        "winningOptionId": "opt-009",
+        "winnerIds": ["user-004", "user-008"]
+      },
+      "createdAt": "2025-01-08T00:00:00Z",
+      "updatedAt": "2025-01-23T21:00:00Z"
+    },
+    {
+      "id": "bet-006",
+      "title": "Survivor Merge Shock",
+      "description": "Will an immunity idol trigger a big flip at merge?",
+      "createdBy": "user-004",
+      "circleId": "circle-003",
+      "status": "OPEN",
+      "deadline": "2025-02-26T23:59:00Z",
+      "stakeAmount": 0,
+      "proofRequirement": "NONE",
+      "privacy": "CIRCLE_PRIVATE",
+      "createdAt": "2025-01-15T00:00:00Z",
+      "updatedAt": "2025-01-17T00:00:00Z"
+    },
+    {
+      "id": "bet-007",
+      "title": "Grammy Surprise Win",
+      "description": "Will an indie artist win Album of the Year?",
+      "createdBy": "user-005",
+      "circleId": "circle-004",
+      "status": "OPEN",
+      "deadline": "2025-02-02T23:59:00Z",
+      "stakeAmount": 10,
+      "proofRequirement": "NONE",
+      "privacy": "PUBLIC",
+      "createdAt": "2025-01-03T00:00:00Z",
+      "updatedAt": "2025-01-17T00:00:00Z"
+    },
+    {
+      "id": "bet-008",
+      "title": "Oscar Upset Pick",
+      "description": "Will the underdog drama take Best Picture?",
+      "createdBy": "user-006",
+      "circleId": "circle-004",
+      "status": "OPEN",
+      "deadline": "2025-03-02T23:59:00Z",
+      "stakeAmount": 25,
+      "proofRequirement": "PHOTO",
+      "privacy": "FRIENDS_PUBLIC",
+      "createdAt": "2025-01-08T00:00:00Z",
+      "updatedAt": "2025-01-17T00:00:00Z"
+    },
+    {
+      "id": "bet-009",
+      "title": "Boxing Match Upset",
+      "description": "Will the 15-1 underdog pull off the knockout?",
+      "createdBy": "user-007",
+      "circleId": "circle-001",
+      "status": "RESOLVED",
+      "deadline": "2025-01-18T23:59:00Z",
+      "stakeAmount": 40,
+      "proofRequirement": "VIDEO",
+      "privacy": "PUBLIC",
+      "resolvedAt": "2025-01-19T03:00:00Z",
+      "resolutionDetails": {
+        "winningOptionId": "opt-018",
+        "winnerIds": ["user-007"]
+      },
+      "createdAt": "2024-12-25T00:00:00Z",
+      "updatedAt": "2025-01-19T03:00:00Z"
+    },
+    {
+      "id": "bet-010",
+      "title": "True Crime Series Release",
+      "description": "Will the new doc-series drop in Q1 2025?",
+      "createdBy": "user-008",
+      "circleId": "circle-003",
+      "status": "OPEN",
+      "deadline": "2025-03-31T23:59:00Z",
+      "stakeAmount": 5,
+      "proofRequirement": "NONE",
+      "privacy": "FRIENDS_PUBLIC",
+      "createdAt": "2025-01-12T00:00:00Z",
+      "updatedAt": "2025-01-17T00:00:00Z"
+    },
+    {
+      "id": "bet-011",
+      "title": "Wimbledon Champion",
+      "description": "Can the 19-year-old make it to Wimbledon semis?",
+      "createdBy": "user-002",
+      "circleId": "circle-002",
+      "status": "OPEN",
+      "deadline": "2025-07-14T23:59:00Z",
+      "stakeAmount": 0,
+      "proofRequirement": "NONE",
+      "privacy": "PUBLIC",
+      "createdAt": "2025-01-06T00:00:00Z",
+      "updatedAt": "2025-01-17T00:00:00Z"
+    },
+    {
+      "id": "bet-012",
+      "title": "Award Show Dress Code",
+      "description": "Will it be the most shocking red carpet looks this year?",
+      "createdBy": "user-006",
+      "circleId": "circle-004",
+      "status": "RESOLVED",
+      "deadline": "2025-01-26T23:59:00Z",
+      "stakeAmount": 0,
+      "proofRequirement": "PHOTO",
+      "privacy": "CIRCLE_PRIVATE",
+      "resolvedAt": "2025-01-27T22:30:00Z",
+      "resolutionDetails": {
+        "winningOptionId": "opt-024",
+        "winnerIds": ["user-005"]
+      },
+      "createdAt": "2025-01-20T00:00:00Z",
+      "updatedAt": "2025-01-27T22:30:00Z"
+    }
+  ],
+  "betOptions": [
+    {
+      "id": "opt-001",
+      "betId": "bet-001",
+      "label": "Yes, Mahomes MVP"
+    },
+    {
+      "id": "opt-002",
+      "betId": "bet-001",
+      "label": "No, someone else"
+    },
+    {
+      "id": "opt-003",
+      "betId": "bet-002",
+      "label": "Yes, Eagles win it"
+    },
+    {
+      "id": "opt-004",
+      "betId": "bet-002",
+      "label": "No, other team"
+    },
+    {
+      "id": "opt-005",
+      "betId": "bet-003",
+      "label": "Yes, triple-doubles"
+    },
+    {
+      "id": "opt-006",
+      "betId": "bet-003",
+      "label": "No, falls short"
+    },
+    {
+      "id": "opt-007",
+      "betId": "bet-004",
+      "label": "Yes, Giannis MVP"
+    },
+    {
+      "id": "opt-008",
+      "betId": "bet-004",
+      "label": "No, other player"
+    },
+    {
+      "id": "opt-009",
+      "betId": "bet-005",
+      "label": "Yes, bombshell survives"
+    },
+    {
+      "id": "opt-010",
+      "betId": "bet-005",
+      "label": "No, split up"
+    },
+    {
+      "id": "opt-011",
+      "betId": "bet-006",
+      "label": "Yes, idol flip"
+    },
+    {
+      "id": "opt-012",
+      "betId": "bet-006",
+      "label": "No, predictable vote"
+    },
+    {
+      "id": "opt-013",
+      "betId": "bet-007",
+      "label": "Yes, indie wins"
+    },
+    {
+      "id": "opt-014",
+      "betId": "bet-007",
+      "label": "No, major label"
+    },
+    {
+      "id": "opt-015",
+      "betId": "bet-008",
+      "label": "Yes, underdog wins"
+    },
+    {
+      "id": "opt-016",
+      "betId": "bet-008",
+      "label": "No, favorite wins"
+    },
+    {
+      "id": "opt-017",
+      "betId": "bet-009",
+      "label": "Yes, favorite wins"
+    },
+    {
+      "id": "opt-018",
+      "betId": "bet-009",
+      "label": "Yes, underdog KO"
+    },
+    {
+      "id": "opt-019",
+      "betId": "bet-010",
+      "label": "Yes, Q1 release"
+    },
+    {
+      "id": "opt-020",
+      "betId": "bet-010",
+      "label": "No, delayed"
+    },
+    {
+      "id": "opt-021",
+      "betId": "bet-011",
+      "label": "Yes, semis"
+    },
+    {
+      "id": "opt-022",
+      "betId": "bet-011",
+      "label": "No, earlier exit"
+    },
+    {
+      "id": "opt-023",
+      "betId": "bet-012",
+      "label": "Yes, shocking looks"
+    },
+    {
+      "id": "opt-024",
+      "betId": "bet-012",
+      "label": "Yes, it was wild"
+    }
+  ],
+  "betParticipants": [
+    {
+      "id": "part-001",
+      "betId": "bet-001",
+      "userId": "user-001",
+      "selectedOptionId": "opt-001",
+      "status": "pending",
+      "createdAt": "2025-01-02T08:00:00Z"
+    },
+    {
+      "id": "part-002",
+      "betId": "bet-001",
+      "userId": "user-003",
+      "selectedOptionId": "opt-002",
+      "status": "pending",
+      "createdAt": "2025-01-03T10:00:00Z"
+    },
+    {
+      "id": "part-003",
+      "betId": "bet-002",
+      "userId": "user-001",
+      "selectedOptionId": "opt-003",
+      "status": "pending",
+      "createdAt": "2024-12-21T15:00:00Z"
+    },
+    {
+      "id": "part-004",
+      "betId": "bet-002",
+      "userId": "user-007",
+      "selectedOptionId": "opt-004",
+      "status": "pending",
+      "createdAt": "2024-12-22T12:00:00Z"
+    },
+    {
+      "id": "part-005",
+      "betId": "bet-003",
+      "userId": "user-003",
+      "selectedOptionId": "opt-005",
+      "status": "pending",
+      "createdAt": "2025-01-11T09:00:00Z"
+    },
+    {
+      "id": "part-006",
+      "betId": "bet-003",
+      "userId": "user-002",
+      "selectedOptionId": "opt-006",
+      "status": "pending",
+      "createdAt": "2025-01-12T14:00:00Z"
+    },
+    {
+      "id": "part-007",
+      "betId": "bet-004",
+      "userId": "user-003",
+      "selectedOptionId": "opt-007",
+      "status": "pending",
+      "createdAt": "2025-01-06T11:00:00Z"
+    },
+    {
+      "id": "part-008",
+      "betId": "bet-004",
+      "userId": "user-001",
+      "selectedOptionId": "opt-008",
+      "status": "pending",
+      "createdAt": "2025-01-07T13:00:00Z"
+    },
+    {
+      "id": "part-009",
+      "betId": "bet-005",
+      "userId": "user-004",
+      "selectedOptionId": "opt-009",
+      "status": "won",
+      "createdAt": "2025-01-09T16:00:00Z"
+    },
+    {
+      "id": "part-010",
+      "betId": "bet-005",
+      "userId": "user-008",
+      "selectedOptionId": "opt-009",
+      "status": "won",
+      "createdAt": "2025-01-10T18:00:00Z"
+    },
+    {
+      "id": "part-011",
+      "betId": "bet-006",
+      "userId": "user-004",
+      "selectedOptionId": "opt-011",
+      "status": "pending",
+      "createdAt": "2025-01-16T10:00:00Z"
+    },
+    {
+      "id": "part-012",
+      "betId": "bet-007",
+      "userId": "user-005",
+      "selectedOptionId": "opt-013",
+      "status": "pending",
+      "createdAt": "2025-01-04T12:00:00Z"
+    },
+    {
+      "id": "part-013",
+      "betId": "bet-008",
+      "userId": "user-006",
+      "selectedOptionId": "opt-015",
+      "status": "pending",
+      "createdAt": "2025-01-09T14:00:00Z"
+    },
+    {
+      "id": "part-014",
+      "betId": "bet-008",
+      "userId": "user-005",
+      "selectedOptionId": "opt-016",
+      "status": "pending",
+      "createdAt": "2025-01-09T15:00:00Z"
+    },
+    {
+      "id": "part-015",
+      "betId": "bet-009",
+      "userId": "user-007",
+      "selectedOptionId": "opt-018",
+      "status": "won",
+      "createdAt": "2024-12-26T18:00:00Z"
+    },
+    {
+      "id": "part-016",
+      "betId": "bet-009",
+      "userId": "user-001",
+      "selectedOptionId": "opt-017",
+      "status": "lost",
+      "createdAt": "2024-12-28T10:00:00Z"
+    },
+    {
+      "id": "part-017",
+      "betId": "bet-010",
+      "userId": "user-008",
+      "selectedOptionId": "opt-019",
+      "status": "pending",
+      "createdAt": "2025-01-13T11:00:00Z"
+    },
+    {
+      "id": "part-018",
+      "betId": "bet-011",
+      "userId": "user-002",
+      "selectedOptionId": "opt-021",
+      "status": "pending",
+      "createdAt": "2025-01-07T09:00:00Z"
+    },
+    {
+      "id": "part-019",
+      "betId": "bet-012",
+      "userId": "user-006",
+      "selectedOptionId": "opt-023",
+      "status": "lost",
+      "createdAt": "2025-01-21T16:00:00Z"
+    },
+    {
+      "id": "part-020",
+      "betId": "bet-012",
+      "userId": "user-005",
+      "selectedOptionId": "opt-024",
+      "status": "won",
+      "createdAt": "2025-01-21T17:00:00Z"
+    }
+  ],
+  "stakeInstances": [
+    {
+      "id": "stake-001",
+      "betId": "bet-001",
+      "userId": "user-001",
+      "participantId": "part-001",
+      "amount": 20,
+      "status": "pending",
+      "proofRequirement": "PHOTO",
+      "createdAt": "2025-01-02T09:00:00Z"
+    },
+    {
+      "id": "stake-002",
+      "betId": "bet-002",
+      "userId": "user-001",
+      "participantId": "part-003",
+      "amount": 50,
+      "status": "pending",
+      "proofRequirement": "NONE",
+      "createdAt": "2024-12-21T16:00:00Z"
+    },
+    {
+      "id": "stake-003",
+      "betId": "bet-009",
+      "userId": "user-007",
+      "participantId": "part-015",
+      "amount": 40,
+      "status": "completed",
+      "proofRequirement": "VIDEO",
+      "proofUploadId": "proof-001",
+      "completedAt": "2025-01-19T04:00:00Z",
+      "createdAt": "2024-12-27T00:00:00Z"
+    }
+  ],
+  "proofUploads": [
+    {
+      "id": "proof-001",
+      "betId": "bet-009",
+      "stakeInstanceId": "stake-003",
+      "userId": "user-007",
+      "proofUrl": "https://images.unsplash.com/photo-1559506200-b8a52335b693?w=500&h=500&fit=crop",
+      "proofType": "VIDEO",
+      "uploadedAt": "2025-01-19T04:15:00Z"
+    },
+    {
+      "id": "proof-002",
+      "betId": "bet-005",
+      "stakeInstanceId": "proof-stake-002",
+      "userId": "user-004",
+      "proofUrl": "https://images.unsplash.com/photo-1599697176734-8e0b09a70000?w=500&h=500&fit=crop",
+      "proofType": "PHOTO",
+      "uploadedAt": "2025-01-23T22:00:00Z"
+    },
+    {
+      "id": "proof-003",
+      "betId": "bet-012",
+      "stakeInstanceId": "proof-stake-003",
+      "userId": "user-005",
+      "proofUrl": "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=500&h=500&fit=crop",
+      "proofType": "PHOTO",
+      "uploadedAt": "2025-01-27T23:00:00Z"
+    }
+  ],
+  "friendships": [
+    {
+      "id": "friend-001",
+      "userId": "user-001",
+      "friendId": "user-003",
+      "createdAt": "2024-08-15T00:00:00Z"
+    },
+    {
+      "id": "friend-002",
+      "userId": "user-001",
+      "friendId": "user-007",
+      "createdAt": "2024-08-20T00:00:00Z"
+    },
+    {
+      "id": "friend-003",
+      "userId": "user-003",
+      "friendId": "user-002",
+      "createdAt": "2024-07-20T00:00:00Z"
+    },
+    {
+      "id": "friend-004",
+      "userId": "user-004",
+      "friendId": "user-008",
+      "createdAt": "2024-09-10T00:00:00Z"
+    },
+    {
+      "id": "friend-005",
+      "userId": "user-005",
+      "friendId": "user-006",
+      "createdAt": "2024-08-25T00:00:00Z"
+    },
+    {
+      "id": "friend-006",
+      "userId": "user-006",
+      "friendId": "user-005",
+      "createdAt": "2024-08-26T00:00:00Z"
+    },
+    {
+      "id": "friend-007",
+      "userId": "user-002",
+      "friendId": "user-007",
+      "createdAt": "2024-07-25T00:00:00Z"
+    }
+  ],
+  "follows": [
+    {
+      "id": "follow-001",
+      "followerId": "user-001",
+      "followingId": "user-003",
+      "createdAt": "2025-01-12T00:00:00Z"
+    },
+    {
+      "id": "follow-002",
+      "followerId": "user-003",
+      "followingId": "user-002",
+      "createdAt": "2025-01-10T00:00:00Z"
+    },
+    {
+      "id": "follow-003",
+      "followerId": "user-004",
+      "followingId": "user-008",
+      "createdAt": "2024-12-15T00:00:00Z"
+    },
+    {
+      "id": "follow-004",
+      "followerId": "user-005",
+      "followingId": "user-006",
+      "createdAt": "2025-01-08T00:00:00Z"
+    },
+    {
+      "id": "follow-005",
+      "followerId": "user-007",
+      "followingId": "user-001",
+      "createdAt": "2025-01-05T00:00:00Z"
+    }
+  ],
+  "identityBadges": [
+    {
+      "id": "badge-001",
+      "userId": "user-001",
+      "badgeName": "Gold Badge",
+      "pillarScores": {
+        "Express": 92,
+        "Protect": 88,
+        "Create": 85,
+        "Evolve": 90,
+        "Change": 89
+      },
+      "totalScore": 89,
+      "verifiedAt": "2025-01-14T00:00:00Z"
+    },
+    {
+      "id": "badge-002",
+      "userId": "user-003",
+      "badgeName": "Platinum Badge",
+      "pillarScores": {
+        "Express": 96,
+        "Protect": 94,
+        "Create": 92,
+        "Evolve": 95,
+        "Change": 93
+      },
+      "totalScore": 94,
+      "verifiedAt": "2025-01-13T00:00:00Z"
+    },
+    {
+      "id": "badge-003",
+      "userId": "user-004",
+      "badgeName": "Silver Badge",
+      "pillarScores": {
+        "Express": 88,
+        "Protect": 82,
+        "Create": 86,
+        "Evolve": 84,
+        "Change": 80
+      },
+      "totalScore": 84,
+      "verifiedAt": "2025-01-12T00:00:00Z"
+    },
+    {
+      "id": "badge-004",
+      "userId": "user-007",
+      "badgeName": "Gold Badge",
+      "pillarScores": {
+        "Express": 85,
+        "Protect": 89,
+        "Create": 87,
+        "Evolve": 88,
+        "Change": 86
+      },
+      "totalScore": 87,
+      "verifiedAt": "2025-01-11T00:00:00Z"
+    },
+    {
+      "id": "badge-005",
+      "userId": "user-005",
+      "badgeName": "Silver Badge",
+      "pillarScores": {
+        "Express": 84,
+        "Protect": 81,
+        "Create": 88,
+        "Evolve": 82,
+        "Change": 80
+      },
+      "totalScore": 83,
+      "verifiedAt": "2025-01-10T00:00:00Z"
+    }
+  ]
+}

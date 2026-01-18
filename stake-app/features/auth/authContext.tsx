@@ -46,32 +46,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     async (email: string, password: string) => {
       setAuthState((prev) => ({ ...prev, isLoading: true, error: null }));
       try {
-        // Demo login support - allow demo@rumble.app / demopass123
-        if (email === 'demo@rumble.app' && password === 'demopass123') {
-          const demoUser: User = {
-            id: 'user-001',
-            email: 'alex@rumble.app',
-            username: 'alexfitness',
-            displayName: 'Alex Chen',
-            bio: 'Gym rat and competitive bettor 💪',
-            createdAt: new Date('2025-01-01').toISOString(),
-            updatedAt: new Date().toISOString(),
-          };
-          const demoToken = 'demo-token-' + Date.now();
-
-          authStorage.setToken(demoToken);
-          authStorage.setUser(demoUser);
-
-          setAuthState({
-            user: demoUser,
-            token: demoToken,
-            isLoading: false,
-            error: null,
-          });
-          return;
-        }
-
-        // Regular API call when backend is ready
+        // API call (will route to demoApi when DEMO_MODE is enabled)
         const response = await apiClient.post<{
           user: User;
           token: string;
