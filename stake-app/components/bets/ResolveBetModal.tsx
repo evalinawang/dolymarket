@@ -54,30 +54,32 @@ export function ResolveBetModal({
         onClick={onClose}
       />
 
-      {/* Modal */}
-      <div className="fixed bottom-0 left-0 right-0 bg-white dark:bg-slate-900 rounded-t-2xl z-50 max-h-[90vh] overflow-y-auto md:bottom-auto md:left-1/2 md:right-auto md:top-1/2 md:w-full md:max-w-md md:-translate-x-1/2 md:-translate-y-1/2 md:rounded-2xl">
-        {/* Header */}
-        <div className="sticky top-0 flex items-center justify-between p-4 border-b border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900">
-          <h2 className="text-xl font-bold">Resolve Bet</h2>
-          <button
-            onClick={onClose}
-            disabled={isLoading}
-            className="text-gray-500 hover:text-gray-700 dark:hover:text-gray-300"
-          >
-            <X size={24} />
-          </button>
-        </div>
+      {/* Modal - Constrained to iPhone frame */}
+      <div className="fixed inset-0 z-50 flex items-end justify-center pointer-events-none">
+        <div className="w-full max-w-[393px] h-full flex items-end pointer-events-auto">
+          <div className="w-full bg-white dark:bg-slate-900 rounded-t-3xl shadow-2xl max-h-[85vh] overflow-y-auto">
+            {/* Header */}
+            <div className="sticky top-0 flex items-center justify-between p-4 border-b border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900">
+              <h2 className="text-xl font-bold">Resolve Bet</h2>
+              <button
+                onClick={onClose}
+                disabled={isLoading}
+                className="text-gray-500 hover:text-gray-700 dark:hover:text-gray-300"
+              >
+                <X size={24} />
+              </button>
+            </div>
 
-        {/* Content */}
-        <div className="p-4 space-y-4">
-          <div>
-            <h3 className="font-semibold mb-2 text-gray-900 dark:text-white">
-              {bet.title}
-            </h3>
-            <p className="text-sm text-gray-600 dark:text-gray-400">
-              Select the winning option
-            </p>
-          </div>
+            {/* Content */}
+            <div className="p-4 space-y-4">
+              <div>
+                <h3 className="font-semibold mb-2 text-gray-900 dark:text-white">
+                  {bet.title}
+                </h3>
+                <p className="text-sm text-gray-600 dark:text-gray-400">
+                  Select the winning option
+                </p>
+              </div>
 
           {/* Options */}
           <div className="space-y-2">
@@ -137,6 +139,8 @@ export function ResolveBetModal({
             >
               {isLoading ? 'Resolving...' : 'Confirm'}
             </button>
+          </div>
+        </div>
           </div>
         </div>
       </div>

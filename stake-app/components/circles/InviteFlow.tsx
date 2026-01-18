@@ -111,8 +111,8 @@ export function InviteFlow({ circleId, circleName }: InviteFlowProps) {
             onClick={() => {
               if (navigator.share) {
                 navigator.share({
-                  title: `Join ${circleName} on Stake`,
-                  text: `Join my circle on Stake and start betting!`,
+                  title: `Join ${circleName} on Rumble`,
+                  text: `Join my circle on Rumble and start betting!`,
                   url: inviteData.link,
                 });
               }

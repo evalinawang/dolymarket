@@ -26,9 +26,13 @@ export function useBets(circleId?: string) {
   return useQuery({
     queryKey: betKeys.list(circleId),
     queryFn: async () => {
-      // TODO: Replace with actual API call
-      const endpoint = circleId ? `/circles/${circleId}/bets` : '/bets';
-      return apiClient.get<Bet[]>(endpoint);
+      try {
+        const endpoint = circleId ? `/circles/${circleId}/bets` : '/bets';
+        return await apiClient.get<Bet[]>(endpoint);
+      } catch {
+        // Demo mode: return empty array
+        return [];
+      }
     },
   });
 }
@@ -40,9 +44,13 @@ export function useHomeFeed() {
   return useQuery({
     queryKey: betKeys.feed(),
     queryFn: async () => {
-      // TODO: Replace with actual API call
-      // Should return bets from all accessible circles, sorted by status (OPEN/LOCKED first) and deadline
-      return apiClient.get<Bet[]>('/bets/feed');
+      try {
+        // Should return bets from all accessible circles, sorted by status (OPEN/LOCKED first) and deadline
+        return await apiClient.get<Bet[]>('/bets/feed');
+      } catch {
+        // Demo mode: return empty array (no bets)
+        return [];
+      }
     },
   });
 }
@@ -54,10 +62,14 @@ export function usePendingStakes() {
   return useQuery({
     queryKey: betKeys.pending(),
     queryFn: async () => {
-      // TODO: Replace with actual API call
-      return apiClient.get<Array<{ bet: Bet; participant: any }>>(
-        '/stakes/pending'
-      );
+      try {
+        return await apiClient.get<Array<{ bet: Bet; participant: any }>>(
+          '/stakes/pending'
+        );
+      } catch {
+        // Demo mode: return empty array
+        return [];
+      }
     },
   });
 }
@@ -70,12 +82,16 @@ export function useExploreFeed(sortBy: string = 'newest') {
   return useQuery({
     queryKey: betKeys.exploreSorted(sortBy),
     queryFn: async () => {
-      // TODO: Replace with actual API call
-      // Should return FRIENDS_PUBLIC bets from friends + following
-      // Sorted by: 'newest' (createdAt DESC), 'deadline' (deadline ASC), 'active' (OPEN/LOCKED first)
-      return apiClient.get<Bet[]>('/bets/explore', {
-        params: { sortBy },
-      });
+      try {
+        // Should return FRIENDS_PUBLIC bets from friends + following
+        // Sorted by: 'newest' (createdAt DESC), 'deadline' (deadline ASC), 'active' (OPEN/LOCKED first)
+        return await apiClient.get<Bet[]>('/bets/explore', {
+          params: { sortBy },
+        });
+      } catch {
+        // Demo mode: return empty array
+        return [];
+      }
     },
   });
 }
@@ -87,8 +103,28 @@ export function useBetDetail(betId: string) {
   return useQuery({
     queryKey: betKeys.detail(betId),
     queryFn: async () => {
-      // TODO: Replace with actual API call
-      return apiClient.get<Bet>(`/bets/${betId}`);
+      try {
+        return await apiClient.get<Bet>(`/bets/${betId}`);
+      } catch {
+        // Demo mode: return a mock bet with the given ID
+        return {
+          id: betId,
+          title: 'Demo Bet',
+          description: 'This is a demo bet created in demo mode.',
+          createdBy: 'user-demo-001',
+          options: [
+            { id: 'opt-1', label: 'Yes', count: 0 },
+            { id: 'opt-2', label: 'No', count: 0 },
+          ],
+          status: 'OPEN' as const,
+          deadline: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000).toISOString(),
+          proofRequirement: 'NONE' as const,
+          privacy: 'FRIENDS_PUBLIC' as const,
+          participants: [],
+          createdAt: new Date().toISOString(),
+          updatedAt: new Date().toISOString(),
+        };
+      }
     },
     enabled: !!betId,
   });

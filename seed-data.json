@@ -1,0 +1,1170 @@
+{
+  "users": [
+    {
+      "id": "user-001",
+      "email": "alex@rumble.app",
+      "username": "alexfitness",
+      "displayName": "Alex Chen",
+      "bio": "Gym rat and competitive bettor 💪",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=alex",
+      "createdAt": "2025-01-01T10:00:00Z",
+      "stats": {
+        "betsCreated": 5,
+        "betsWon": 3,
+        "betsLost": 2,
+        "reputation": 85
+      }
+    },
+    {
+      "id": "user-002",
+      "email": "jordan@rumble.app",
+      "username": "jordanbaker",
+      "displayName": "Jordan Baker",
+      "bio": "Sports enthusiast and amateur gambler 🏈",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=jordan",
+      "createdAt": "2025-01-02T11:00:00Z",
+      "stats": {
+        "betsCreated": 4,
+        "betsWon": 2,
+        "betsLost": 2,
+        "reputation": 72
+      }
+    },
+    {
+      "id": "user-003",
+      "email": "sam@rumble.app",
+      "username": "samstreams",
+      "displayName": "Sam Rivers",
+      "bio": "TV addict | Reality show expert 📺",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=sam",
+      "createdAt": "2025-01-03T12:00:00Z",
+      "stats": {
+        "betsCreated": 6,
+        "betsWon": 5,
+        "betsLost": 1,
+        "reputation": 92
+      }
+    },
+    {
+      "id": "user-004",
+      "email": "casey@rumble.app",
+      "username": "caseygames",
+      "displayName": "Casey Morgan",
+      "bio": "Gaming competitive & esports fan 🎮",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=casey",
+      "createdAt": "2025-01-04T13:00:00Z",
+      "stats": {
+        "betsCreated": 3,
+        "betsWon": 1,
+        "betsLost": 2,
+        "reputation": 65
+      }
+    },
+    {
+      "id": "user-005",
+      "email": "taylor@rumble.app",
+      "username": "taylortech",
+      "displayName": "Taylor Kim",
+      "bio": "Tech startup founder | Coffee addict ☕",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=taylor",
+      "createdAt": "2025-01-05T14:00:00Z",
+      "stats": {
+        "betsCreated": 7,
+        "betsWon": 6,
+        "betsLost": 1,
+        "reputation": 95
+      }
+    },
+    {
+      "id": "user-006",
+      "email": "morgan@rumble.app",
+      "username": "morganarts",
+      "displayName": "Morgan Lee",
+      "bio": "Artist | Foodie | Always up for a challenge 🎨",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=morgan",
+      "createdAt": "2025-01-06T15:00:00Z",
+      "stats": {
+        "betsCreated": 4,
+        "betsWon": 3,
+        "betsLost": 1,
+        "reputation": 88
+      }
+    },
+    {
+      "id": "user-007",
+      "email": "alex2@rumble.app",
+      "username": "alexmusic",
+      "displayName": "Alex Rodriguez",
+      "bio": "Musician | Music producer 🎵",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=alexrod",
+      "createdAt": "2025-01-07T16:00:00Z",
+      "stats": {
+        "betsCreated": 2,
+        "betsWon": 1,
+        "betsLost": 1,
+        "reputation": 70
+      }
+    },
+    {
+      "id": "user-008",
+      "email": "jamie@rumble.app",
+      "username": "jamieactive",
+      "displayName": "Jamie Walsh",
+      "bio": "Rock climber | Outdoor enthusiast 🏔️",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=jamie",
+      "createdAt": "2025-01-08T17:00:00Z",
+      "stats": {
+        "betsCreated": 5,
+        "betsWon": 4,
+        "betsLost": 1,
+        "reputation": 89
+      }
+    }
+  ],
+  "friendships": [
+    {
+      "id": "friendship-001",
+      "userId1": "user-001",
+      "userId2": "user-002",
+      "status": "CONFIRMED",
+      "createdAt": "2025-01-05T10:00:00Z"
+    },
+    {
+      "id": "friendship-002",
+      "userId1": "user-001",
+      "userId2": "user-005",
+      "status": "CONFIRMED",
+      "createdAt": "2025-01-06T10:00:00Z"
+    },
+    {
+      "id": "friendship-003",
+      "userId1": "user-002",
+      "userId2": "user-003",
+      "status": "CONFIRMED",
+      "createdAt": "2025-01-07T10:00:00Z"
+    },
+    {
+      "id": "friendship-004",
+      "userId1": "user-003",
+      "userId2": "user-006",
+      "status": "CONFIRMED",
+      "createdAt": "2025-01-08T10:00:00Z"
+    },
+    {
+      "id": "friendship-005",
+      "userId1": "user-004",
+      "userId2": "user-007",
+      "status": "CONFIRMED",
+      "createdAt": "2025-01-09T10:00:00Z"
+    },
+    {
+      "id": "friendship-006",
+      "userId1": "user-005",
+      "userId2": "user-008",
+      "status": "CONFIRMED",
+      "createdAt": "2025-01-10T10:00:00Z"
+    },
+    {
+      "id": "friendship-007",
+      "userId1": "user-006",
+      "userId2": "user-008",
+      "status": "CONFIRMED",
+      "createdAt": "2025-01-11T10:00:00Z"
+    }
+  ],
+  "follows": [
+    {
+      "id": "follow-001",
+      "followerId": "user-001",
+      "followingId": "user-003",
+      "createdAt": "2025-01-06T10:00:00Z"
+    },
+    {
+      "id": "follow-002",
+      "followerId": "user-002",
+      "followingId": "user-005",
+      "createdAt": "2025-01-07T10:00:00Z"
+    },
+    {
+      "id": "follow-003",
+      "followerId": "user-004",
+      "followingId": "user-008",
+      "createdAt": "2025-01-08T10:00:00Z"
+    },
+    {
+      "id": "follow-004",
+      "followerId": "user-007",
+      "followingId": "user-001",
+      "createdAt": "2025-01-09T10:00:00Z"
+    },
+    {
+      "id": "follow-005",
+      "followerId": "user-008",
+      "followingId": "user-005",
+      "createdAt": "2025-01-10T10:00:00Z"
+    }
+  ],
+  "circles": [
+    {
+      "id": "circle-001",
+      "name": "Gym Crew",
+      "description": "Fitness enthusiasts making accountability bets",
+      "privacy": "FRIENDS_PUBLIC",
+      "hostId": "user-001",
+      "createdAt": "2025-01-10T10:00:00Z"
+    },
+    {
+      "id": "circle-002",
+      "name": "Sports Fanatics",
+      "description": "NFL, NBA, and soccer prediction battles",
+      "privacy": "FRIENDS_PUBLIC",
+      "hostId": "user-002",
+      "createdAt": "2025-01-11T10:00:00Z"
+    },
+    {
+      "id": "circle-003",
+      "name": "Reality TV Obsessed",
+      "description": "Betting on reality show outcomes",
+      "privacy": "PRIVATE",
+      "hostId": "user-003",
+      "createdAt": "2025-01-12T10:00:00Z"
+    },
+    {
+      "id": "circle-004",
+      "name": "Tech Startup Squad",
+      "description": "Friendly competition among tech founders",
+      "privacy": "FRIENDS_PUBLIC",
+      "hostId": "user-005",
+      "createdAt": "2025-01-13T10:00:00Z"
+    }
+  ],
+  "memberships": [
+    {
+      "id": "membership-001",
+      "circleId": "circle-001",
+      "userId": "user-001",
+      "role": "HOST",
+      "joinedAt": "2025-01-10T10:00:00Z"
+    },
+    {
+      "id": "membership-002",
+      "circleId": "circle-001",
+      "userId": "user-005",
+      "role": "MEMBER",
+      "joinedAt": "2025-01-10T11:00:00Z"
+    },
+    {
+      "id": "membership-003",
+      "circleId": "circle-001",
+      "userId": "user-008",
+      "role": "MEMBER",
+      "joinedAt": "2025-01-10T12:00:00Z"
+    },
+    {
+      "id": "membership-004",
+      "circleId": "circle-002",
+      "userId": "user-002",
+      "role": "HOST",
+      "joinedAt": "2025-01-11T10:00:00Z"
+    },
+    {
+      "id": "membership-005",
+      "circleId": "circle-002",
+      "userId": "user-001",
+      "role": "MEMBER",
+      "joinedAt": "2025-01-11T11:00:00Z"
+    },
+    {
+      "id": "membership-006",
+      "circleId": "circle-002",
+      "userId": "user-006",
+      "role": "MEMBER",
+      "joinedAt": "2025-01-11T12:00:00Z"
+    },
+    {
+      "id": "membership-007",
+      "circleId": "circle-003",
+      "userId": "user-003",
+      "role": "HOST",
+      "joinedAt": "2025-01-12T10:00:00Z"
+    },
+    {
+      "id": "membership-008",
+      "circleId": "circle-003",
+      "userId": "user-006",
+      "role": "MEMBER",
+      "joinedAt": "2025-01-12T11:00:00Z"
+    },
+    {
+      "id": "membership-009",
+      "circleId": "circle-004",
+      "userId": "user-005",
+      "role": "HOST",
+      "joinedAt": "2025-01-13T10:00:00Z"
+    },
+    {
+      "id": "membership-010",
+      "circleId": "circle-004",
+      "userId": "user-002",
+      "role": "MEMBER",
+      "joinedAt": "2025-01-13T11:00:00Z"
+    }
+  ],
+  "bets": [
+    {
+      "id": "bet-001",
+      "title": "Will Alex hit 20 consecutive pushups by Friday?",
+      "description": "Alex challenges himself to do 20 consecutive pushups without breaking form. Must be video recorded.",
+      "circleId": "circle-001",
+      "hostId": "user-001",
+      "status": "RESOLVED",
+      "privacy": "FRIENDS_PUBLIC",
+      "deadline": "2025-01-24T23:59:59Z",
+      "createdAt": "2025-01-14T10:00:00Z",
+      "resolvedAt": "2025-01-24T18:00:00Z",
+      "winningOptionId": "opt-001",
+      "proofRequirement": "VIDEO"
+    },
+    {
+      "id": "bet-002",
+      "title": "NFL Championship: Which team wins Super Bowl LIX?",
+      "description": "Who will win the 2025 Super Bowl? Place your bets!",
+      "circleId": "circle-002",
+      "hostId": "user-002",
+      "status": "LOCKED",
+      "privacy": "FRIENDS_PUBLIC",
+      "deadline": "2025-02-09T23:59:59Z",
+      "createdAt": "2025-01-12T10:00:00Z",
+      "proofRequirement": "NONE"
+    },
+    {
+      "id": "bet-003",
+      "title": "Will Taylor launch a new product this quarter?",
+      "description": "Will Taylor's startup launch a new product before the end of Q1 2025?",
+      "circleId": "circle-004",
+      "hostId": "user-005",
+      "status": "OPEN",
+      "privacy": "FRIENDS_PUBLIC",
+      "deadline": "2025-03-31T23:59:59Z",
+      "createdAt": "2025-01-15T10:00:00Z",
+      "proofRequirement": "NONE"
+    },
+    {
+      "id": "bet-004",
+      "title": "Reality TV: Who gets eliminated first on Love Island?",
+      "description": "First contestant to be eliminated on the new Love Island season",
+      "circleId": "circle-003",
+      "hostId": "user-003",
+      "status": "RESOLVED",
+      "privacy": "PRIVATE",
+      "deadline": "2025-02-14T23:59:59Z",
+      "createdAt": "2025-01-10T10:00:00Z",
+      "resolvedAt": "2025-02-14T20:00:00Z",
+      "winningOptionId": "opt-010",
+      "proofRequirement": "NONE"
+    },
+    {
+      "id": "bet-005",
+      "title": "Gym Challenge: Who burns 5000 calories by end of week?",
+      "description": "Fitness tracker comparison - who reaches 5000 calories burned this week?",
+      "circleId": "circle-001",
+      "hostId": "user-005",
+      "status": "RESOLVED",
+      "privacy": "FRIENDS_PUBLIC",
+      "deadline": "2025-01-19T23:59:59Z",
+      "createdAt": "2025-01-13T10:00:00Z",
+      "resolvedAt": "2025-01-19T22:00:00Z",
+      "winningOptionId": "opt-014",
+      "proofRequirement": "PHOTO"
+    },
+    {
+      "id": "bet-006",
+      "title": "NBA: Lakers vs Celtics - Who wins next matchup?",
+      "description": "Upcoming Lakers vs Celtics game - predict the winner",
+      "circleId": "circle-002",
+      "hostId": "user-006",
+      "status": "LOCKED",
+      "privacy": "FRIENDS_PUBLIC",
+      "deadline": "2025-02-01T23:59:59Z",
+      "createdAt": "2025-01-14T10:00:00Z",
+      "proofRequirement": "NONE"
+    },
+    {
+      "id": "bet-007",
+      "title": "Will Casey pass the gaming certification?",
+      "description": "Can Casey pass the esports competitive certification exam?",
+      "circleId": "circle-004",
+      "hostId": "user-002",
+      "status": "OPEN",
+      "privacy": "FRIENDS_PUBLIC",
+      "deadline": "2025-02-28T23:59:59Z",
+      "createdAt": "2025-01-16T10:00:00Z",
+      "proofRequirement": "PHOTO"
+    },
+    {
+      "id": "bet-008",
+      "title": "Roommate Chore Challenge: Dishes done by Sunday?",
+      "description": "Will Jordan do all the dishes by Sunday night?",
+      "circleId": "circle-001",
+      "hostId": "user-001",
+      "status": "RESOLVED",
+      "privacy": "FRIENDS_PUBLIC",
+      "deadline": "2025-01-19T23:59:59Z",
+      "createdAt": "2025-01-14T10:00:00Z",
+      "resolvedAt": "2025-01-19T21:00:00Z",
+      "winningOptionId": "opt-024",
+      "proofRequirement": "PHOTO"
+    },
+    {
+      "id": "bet-009",
+      "title": "Reality TV: Survivor tribal council prediction",
+      "description": "Who will be voted out at the next tribal council on Survivor?",
+      "circleId": "circle-003",
+      "hostId": "user-006",
+      "status": "OPEN",
+      "privacy": "PRIVATE",
+      "deadline": "2025-02-20T23:59:59Z",
+      "createdAt": "2025-01-17T10:00:00Z",
+      "proofRequirement": "NONE"
+    },
+    {
+      "id": "bet-010",
+      "title": "Soccer: Champions League Final winner",
+      "description": "Who will win the UEFA Champions League Final 2025?",
+      "circleId": "circle-002",
+      "hostId": "user-002",
+      "status": "OPEN",
+      "privacy": "FRIENDS_PUBLIC",
+      "deadline": "2025-06-01T23:59:59Z",
+      "createdAt": "2025-01-18T10:00:00Z",
+      "proofRequirement": "NONE"
+    },
+    {
+      "id": "bet-011",
+      "title": "Podcast Launch Challenge",
+      "description": "Will Taylor launch their tech podcast by end of February?",
+      "circleId": "circle-004",
+      "hostId": "user-005",
+      "status": "OPEN",
+      "privacy": "FRIENDS_PUBLIC",
+      "deadline": "2025-02-28T23:59:59Z",
+      "createdAt": "2025-01-19T10:00:00Z",
+      "proofRequirement": "PHOTO"
+    },
+    {
+      "id": "bet-012",
+      "title": "Music Festival Lineup: Will headline artist perform?",
+      "description": "Will the announced headline artist actually perform at Coachella?",
+      "circleId": "circle-003",
+      "hostId": "user-003",
+      "status": "OPEN",
+      "privacy": "FRIENDS_PUBLIC",
+      "deadline": "2025-04-20T23:59:59Z",
+      "createdAt": "2025-01-20T10:00:00Z",
+      "proofRequirement": "NONE"
+    }
+  ],
+  "bet_options": [
+    {
+      "id": "opt-001",
+      "betId": "bet-001",
+      "name": "Yes",
+      "description": "Alex will complete 20 pushups"
+    },
+    {
+      "id": "opt-002",
+      "betId": "bet-001",
+      "name": "No",
+      "description": "Alex will fail the challenge"
+    },
+    {
+      "id": "opt-003",
+      "betId": "bet-002",
+      "name": "Kansas City Chiefs",
+      "description": "Defending champions"
+    },
+    {
+      "id": "opt-004",
+      "betId": "bet-002",
+      "name": "San Francisco 49ers",
+      "description": "Strong Western contender"
+    },
+    {
+      "id": "opt-005",
+      "betId": "bet-002",
+      "name": "Buffalo Bills",
+      "description": "Consistent playoff team"
+    },
+    {
+      "id": "opt-006",
+      "betId": "bet-002",
+      "name": "Other",
+      "description": "Any other team"
+    },
+    {
+      "id": "opt-007",
+      "betId": "bet-003",
+      "name": "Yes, new product launch",
+      "description": "Taylor will announce a product"
+    },
+    {
+      "id": "opt-008",
+      "betId": "bet-003",
+      "name": "No product launch",
+      "description": "No new product announcement"
+    },
+    {
+      "id": "opt-009",
+      "betId": "bet-004",
+      "name": "Marcus",
+      "description": "Hot-headed contestant"
+    },
+    {
+      "id": "opt-010",
+      "betId": "bet-004",
+      "name": "Zara",
+      "description": "Shy contestant"
+    },
+    {
+      "id": "opt-011",
+      "betId": "bet-004",
+      "name": "Devon",
+      "description": "Popular contestant"
+    },
+    {
+      "id": "opt-012",
+      "betId": "bet-004",
+      "name": "Someone else",
+      "description": "Other contestant"
+    },
+    {
+      "id": "opt-013",
+      "betId": "bet-005",
+      "name": "Alex Chen",
+      "description": "The gym legend"
+    },
+    {
+      "id": "opt-014",
+      "betId": "bet-005",
+      "name": "Taylor Kim",
+      "description": "The fitness competitor"
+    },
+    {
+      "id": "opt-015",
+      "betId": "bet-005",
+      "name": "Jamie Walsh",
+      "description": "The rock climber"
+    },
+    {
+      "id": "opt-016",
+      "betId": "bet-006",
+      "name": "Lakers",
+      "description": "Western powerhouse"
+    },
+    {
+      "id": "opt-017",
+      "betId": "bet-006",
+      "name": "Celtics",
+      "description": "Eastern champion"
+    },
+    {
+      "id": "opt-018",
+      "betId": "bet-007",
+      "name": "Pass (85+ score)",
+      "description": "Casey gets 85 or higher"
+    },
+    {
+      "id": "opt-019",
+      "betId": "bet-007",
+      "name": "Fail (below 85)",
+      "description": "Casey scores below 85"
+    },
+    {
+      "id": "opt-020",
+      "betId": "bet-008",
+      "name": "Yes, done by Sunday",
+      "description": "All dishes completed"
+    },
+    {
+      "id": "opt-021",
+      "betId": "bet-008",
+      "name": "Nope, still waiting",
+      "description": "Dishes still undone"
+    },
+    {
+      "id": "opt-024",
+      "betId": "bet-008",
+      "name": "Done by Sunday",
+      "description": "Surprisingly complete"
+    },
+    {
+      "id": "opt-025",
+      "betId": "bet-009",
+      "name": "Marcus",
+      "description": "Strong player"
+    },
+    {
+      "id": "opt-026",
+      "betId": "bet-009",
+      "name": "Samantha",
+      "description": "Social butterfly"
+    },
+    {
+      "id": "opt-027",
+      "betId": "bet-009",
+      "name": "Daniel",
+      "description": "Weak link"
+    },
+    {
+      "id": "opt-028",
+      "betId": "bet-010",
+      "name": "Real Madrid",
+      "description": "Record champions"
+    },
+    {
+      "id": "opt-029",
+      "betId": "bet-010",
+      "name": "Manchester City",
+      "description": "Current best"
+    },
+    {
+      "id": "opt-030",
+      "betId": "bet-010",
+      "name": "Bayern Munich",
+      "description": "Consistent contender"
+    },
+    {
+      "id": "opt-031",
+      "betId": "bet-010",
+      "name": "Other European team",
+      "description": "Surprise finalist"
+    },
+    {
+      "id": "opt-032",
+      "betId": "bet-011",
+      "name": "Yes, podcast launches",
+      "description": "First episode posted"
+    },
+    {
+      "id": "opt-033",
+      "betId": "bet-011",
+      "name": "No podcast by deadline",
+      "description": "Delayed or cancelled"
+    },
+    {
+      "id": "opt-034",
+      "betId": "bet-012",
+      "name": "Yes, performs at Coachella",
+      "description": "Headline artist on stage"
+    },
+    {
+      "id": "opt-035",
+      "betId": "bet-012",
+      "name": "No, cancelled or replaced",
+      "description": "Doesn't perform"
+    }
+  ],
+  "bet_picks": [
+    {
+      "id": "pick-001",
+      "betId": "bet-001",
+      "participantId": "participant-001",
+      "userId": "user-001",
+      "optionId": "opt-001",
+      "status": "PICKED",
+      "pickedAt": "2025-01-14T11:00:00Z"
+    },
+    {
+      "id": "pick-002",
+      "betId": "bet-001",
+      "participantId": "participant-002",
+      "userId": "user-005",
+      "optionId": "opt-001",
+      "status": "PICKED",
+      "pickedAt": "2025-01-14T11:30:00Z"
+    },
+    {
+      "id": "pick-003",
+      "betId": "bet-001",
+      "participantId": "participant-003",
+      "userId": "user-008",
+      "optionId": "opt-002",
+      "status": "PICKED",
+      "pickedAt": "2025-01-14T12:00:00Z"
+    },
+    {
+      "id": "pick-004",
+      "betId": "bet-002",
+      "participantId": "participant-004",
+      "userId": "user-002",
+      "optionId": "opt-003",
+      "status": "PICKED",
+      "pickedAt": "2025-01-12T11:00:00Z"
+    },
+    {
+      "id": "pick-005",
+      "betId": "bet-002",
+      "participantId": "participant-005",
+      "userId": "user-001",
+      "optionId": "opt-004",
+      "status": "PICKED",
+      "pickedAt": "2025-01-12T11:30:00Z"
+    },
+    {
+      "id": "pick-006",
+      "betId": "bet-002",
+      "participantId": "participant-006",
+      "userId": "user-006",
+      "optionId": "opt-005",
+      "status": "PICKED",
+      "pickedAt": "2025-01-12T12:00:00Z"
+    },
+    {
+      "id": "pick-007",
+      "betId": "bet-003",
+      "participantId": "participant-007",
+      "userId": "user-005",
+      "optionId": "opt-007",
+      "status": "PICKED",
+      "pickedAt": "2025-01-15T11:00:00Z"
+    },
+    {
+      "id": "pick-008",
+      "betId": "bet-003",
+      "participantId": "participant-008",
+      "userId": "user-002",
+      "optionId": "opt-008",
+      "status": "PICKED",
+      "pickedAt": "2025-01-15T11:30:00Z"
+    },
+    {
+      "id": "pick-009",
+      "betId": "bet-004",
+      "participantId": "participant-009",
+      "userId": "user-003",
+      "optionId": "opt-010",
+      "status": "PICKED",
+      "pickedAt": "2025-01-10T11:00:00Z"
+    },
+    {
+      "id": "pick-010",
+      "betId": "bet-004",
+      "participantId": "participant-010",
+      "userId": "user-006",
+      "optionId": "opt-009",
+      "status": "PICKED",
+      "pickedAt": "2025-01-10T11:30:00Z"
+    },
+    {
+      "id": "pick-011",
+      "betId": "bet-005",
+      "participantId": "participant-011",
+      "userId": "user-005",
+      "optionId": "opt-014",
+      "status": "PICKED",
+      "pickedAt": "2025-01-13T11:00:00Z"
+    },
+    {
+      "id": "pick-012",
+      "betId": "bet-005",
+      "participantId": "participant-012",
+      "userId": "user-001",
+      "optionId": "opt-013",
+      "status": "PICKED",
+      "pickedAt": "2025-01-13T11:30:00Z"
+    },
+    {
+      "id": "pick-013",
+      "betId": "bet-005",
+      "participantId": "participant-013",
+      "userId": "user-008",
+      "optionId": "opt-015",
+      "status": "PICKED",
+      "pickedAt": "2025-01-13T12:00:00Z"
+    },
+    {
+      "id": "pick-014",
+      "betId": "bet-006",
+      "participantId": "participant-014",
+      "userId": "user-006",
+      "optionId": "opt-016",
+      "status": "PICKED",
+      "pickedAt": "2025-01-14T11:00:00Z"
+    },
+    {
+      "id": "pick-015",
+      "betId": "bet-006",
+      "participantId": "participant-015",
+      "userId": "user-002",
+      "optionId": "opt-017",
+      "status": "PICKED",
+      "pickedAt": "2025-01-14T11:30:00Z"
+    },
+    {
+      "id": "pick-016",
+      "betId": "bet-007",
+      "participantId": "participant-016",
+      "userId": "user-002",
+      "optionId": "opt-018",
+      "status": "PICKED",
+      "pickedAt": "2025-01-16T11:00:00Z"
+    },
+    {
+      "id": "pick-017",
+      "betId": "bet-008",
+      "participantId": "participant-017",
+      "userId": "user-001",
+      "optionId": "opt-024",
+      "status": "PICKED",
+      "pickedAt": "2025-01-14T11:00:00Z"
+    },
+    {
+      "id": "pick-018",
+      "betId": "bet-008",
+      "participantId": "participant-018",
+      "userId": "user-002",
+      "optionId": "opt-021",
+      "status": "PICKED",
+      "pickedAt": "2025-01-14T11:30:00Z"
+    },
+    {
+      "id": "pick-019",
+      "betId": "bet-009",
+      "participantId": "participant-019",
+      "userId": "user-006",
+      "optionId": "opt-027",
+      "status": "PICKED",
+      "pickedAt": "2025-01-17T11:00:00Z"
+    },
+    {
+      "id": "pick-020",
+      "betId": "bet-009",
+      "participantId": "participant-020",
+      "userId": "user-003",
+      "optionId": "opt-025",
+      "status": "PICKED",
+      "pickedAt": "2025-01-17T11:30:00Z"
+    },
+    {
+      "id": "pick-021",
+      "betId": "bet-010",
+      "participantId": "participant-021",
+      "userId": "user-002",
+      "optionId": "opt-028",
+      "status": "PICKED",
+      "pickedAt": "2025-01-18T11:00:00Z"
+    },
+    {
+      "id": "pick-022",
+      "betId": "bet-010",
+      "participantId": "participant-022",
+      "userId": "user-006",
+      "optionId": "opt-029",
+      "status": "PICKED",
+      "pickedAt": "2025-01-18T11:30:00Z"
+    },
+    {
+      "id": "pick-023",
+      "betId": "bet-011",
+      "participantId": "participant-023",
+      "userId": "user-005",
+      "optionId": "opt-032",
+      "status": "PICKED",
+      "pickedAt": "2025-01-19T11:00:00Z"
+    },
+    {
+      "id": "pick-024",
+      "betId": "bet-011",
+      "participantId": "participant-024",
+      "userId": "user-002",
+      "optionId": "opt-033",
+      "status": "PICKED",
+      "pickedAt": "2025-01-19T11:30:00Z"
+    },
+    {
+      "id": "pick-025",
+      "betId": "bet-012",
+      "participantId": "participant-025",
+      "userId": "user-003",
+      "optionId": "opt-034",
+      "status": "PICKED",
+      "pickedAt": "2025-01-20T11:00:00Z"
+    }
+  ],
+  "bet_resolutions": [
+    {
+      "id": "resolution-001",
+      "betId": "bet-001",
+      "winningOptionId": "opt-001",
+      "resolutionNotes": "Video evidence submitted showing Alex completed 20 pushups with proper form",
+      "resolvedAt": "2025-01-24T18:00:00Z",
+      "resolvedBy": "user-001"
+    },
+    {
+      "id": "resolution-002",
+      "betId": "bet-004",
+      "winningOptionId": "opt-010",
+      "resolutionNotes": "Zara was voted out at tribal council episode aired 2025-02-14",
+      "resolvedAt": "2025-02-14T20:00:00Z",
+      "resolvedBy": "user-003"
+    },
+    {
+      "id": "resolution-003",
+      "betId": "bet-005",
+      "winningOptionId": "opt-014",
+      "resolutionNotes": "Taylor Kim's fitness tracker shows 5247 calories burned for the week",
+      "resolvedAt": "2025-01-19T22:00:00Z",
+      "resolvedBy": "user-005"
+    },
+    {
+      "id": "resolution-004",
+      "betId": "bet-008",
+      "winningOptionId": "opt-024",
+      "resolutionNotes": "Jordan submitted photo showing all dishes washed and put away",
+      "resolvedAt": "2025-01-19T21:00:00Z",
+      "resolvedBy": "user-001"
+    }
+  ],
+  "stake_instances": [
+    {
+      "id": "stake-001",
+      "betId": "bet-001",
+      "participantId": "participant-003",
+      "userId": "user-008",
+      "status": "PENDING",
+      "amount": 25,
+      "proofRequirement": "VIDEO",
+      "createdAt": "2025-01-24T18:00:00Z",
+      "dueDate": "2025-02-07T23:59:59Z"
+    },
+    {
+      "id": "stake-002",
+      "betId": "bet-004",
+      "participantId": "participant-010",
+      "userId": "user-006",
+      "status": "COMPLETED",
+      "amount": 20,
+      "proofRequirement": "NONE",
+      "createdAt": "2025-02-14T20:00:00Z",
+      "completedAt": "2025-02-15T10:00:00Z",
+      "proofUploadId": "proof-001"
+    },
+    {
+      "id": "stake-003",
+      "betId": "bet-005",
+      "participantId": "participant-012",
+      "userId": "user-001",
+      "status": "COMPLETED",
+      "amount": 15,
+      "proofRequirement": "PHOTO",
+      "createdAt": "2025-01-19T22:00:00Z",
+      "completedAt": "2025-01-20T14:00:00Z",
+      "proofUploadId": "proof-002"
+    },
+    {
+      "id": "stake-004",
+      "betId": "bet-005",
+      "participantId": "participant-013",
+      "userId": "user-008",
+      "status": "PENDING",
+      "amount": 15,
+      "proofRequirement": "PHOTO",
+      "createdAt": "2025-01-19T22:00:00Z",
+      "dueDate": "2025-02-02T23:59:59Z"
+    },
+    {
+      "id": "stake-005",
+      "betId": "bet-008",
+      "participantId": "participant-018",
+      "userId": "user-002",
+      "status": "COMPLETED",
+      "amount": 10,
+      "proofRequirement": "PHOTO",
+      "createdAt": "2025-01-19T21:00:00Z",
+      "completedAt": "2025-01-20T11:00:00Z",
+      "proofUploadId": "proof-003"
+    }
+  ],
+  "proof_uploads": [
+    {
+      "id": "proof-001",
+      "stakeId": "stake-002",
+      "betId": "bet-004",
+      "userId": "user-006",
+      "proofType": "NONE",
+      "proofUrl": "https://example.com/no-proof",
+      "uploadedAt": "2025-02-15T10:00:00Z",
+      "verified": true,
+      "verifiedAt": "2025-02-15T11:00:00Z"
+    },
+    {
+      "id": "proof-002",
+      "stakeId": "stake-003",
+      "betId": "bet-005",
+      "userId": "user-001",
+      "proofType": "PHOTO",
+      "proofUrl": "https://example.com/photos/alex-fitness-tracker.jpg",
+      "uploadedAt": "2025-01-20T14:00:00Z",
+      "verified": true,
+      "verifiedAt": "2025-01-20T15:00:00Z"
+    },
+    {
+      "id": "proof-003",
+      "stakeId": "stake-005",
+      "betId": "bet-008",
+      "userId": "user-002",
+      "proofType": "PHOTO",
+      "proofUrl": "https://example.com/photos/dishes-done.jpg",
+      "uploadedAt": "2025-01-20T11:00:00Z",
+      "verified": true,
+      "verifiedAt": "2025-01-20T12:00:00Z"
+    }
+  ],
+  "identity_badges": [
+    {
+      "id": "badge-001",
+      "userId": "user-001",
+      "level": "SILVER",
+      "pillars": {
+        "EXPRESS": {
+          "score": 85,
+          "description": "Clear communication in all bets and discussions"
+        },
+        "PROTECT": {
+          "score": 78,
+          "description": "Reliable bet completion and proof submission"
+        },
+        "CREATE": {
+          "score": 82,
+          "description": "Originator of 5 unique bet concepts"
+        },
+        "EVOLVE": {
+          "score": 88,
+          "description": "Quick learner adapting to bet feedback"
+        },
+        "CHANGE": {
+          "score": 75,
+          "description": "Consistently improving bet proposals"
+        }
+      },
+      "overallScore": 82,
+      "generatedAt": "2025-01-20T10:00:00Z"
+    },
+    {
+      "id": "badge-002",
+      "userId": "user-003",
+      "level": "GOLD",
+      "pillars": {
+        "EXPRESS": {
+          "score": 92,
+          "description": "Excellent articulation of bet rules and outcomes"
+        },
+        "PROTECT": {
+          "score": 95,
+          "description": "Flawless record of following through on bets"
+        },
+        "CREATE": {
+          "score": 88,
+          "description": "Creator of 6 well-designed bets"
+        },
+        "EVOLVE": {
+          "score": 90,
+          "description": "Active learner improving community engagement"
+        },
+        "CHANGE": {
+          "score": 91,
+          "description": "Driving positive changes in betting culture"
+        }
+      },
+      "overallScore": 91,
+      "generatedAt": "2025-01-20T10:00:00Z"
+    },
+    {
+      "id": "badge-003",
+      "userId": "user-005",
+      "level": "PLATINUM",
+      "pillars": {
+        "EXPRESS": {
+          "score": 94,
+          "description": "Masterful communication and clarity"
+        },
+        "PROTECT": {
+          "score": 96,
+          "description": "Exemplary commitment to accountability"
+        },
+        "CREATE": {
+          "score": 91,
+          "description": "Innovative bet creator and facilitator"
+        },
+        "EVOLVE": {
+          "score": 93,
+          "description": "Thought leader in community development"
+        },
+        "CHANGE": {
+          "score": 94,
+          "description": "Champion of positive behavioral change"
+        }
+      },
+      "overallScore": 94,
+      "generatedAt": "2025-01-20T10:00:00Z"
+    },
+    {
+      "id": "badge-004",
+      "userId": "user-008",
+      "level": "SILVER",
+      "pillars": {
+        "EXPRESS": {
+          "score": 80,
+          "description": "Clear communication in bet discussions"
+        },
+        "PROTECT": {
+          "score": 88,
+          "description": "Strong commitment to follow-through"
+        },
+        "CREATE": {
+          "score": 76,
+          "description": "Creative participant in bet creation"
+        },
+        "EVOLVE": {
+          "score": 84,
+          "description": "Actively seeking improvement"
+        },
+        "CHANGE": {
+          "score": 82,
+          "description": "Positive contributor to community growth"
+        }
+      },
+      "overallScore": 82,
+      "generatedAt": "2025-01-20T10:00:00Z"
+    },
+    {
+      "id": "badge-005",
+      "userId": "user-006",
+      "level": "GOLD",
+      "pillars": {
+        "EXPRESS": {
+          "score": 89,
+          "description": "Strong articulation of betting strategy"
+        },
+        "PROTECT": {
+          "score": 92,
+          "description": "Excellent accountability and follow-through"
+        },
+        "CREATE": {
+          "score": 85,
+          "description": "Well-crafted bet proposals"
+        },
+        "EVOLVE": {
+          "score": 87,
+          "description": "Continuous learner and improvementer"
+        },
+        "CHANGE": {
+          "score": 88,
+          "description": "Contributing to positive community dynamics"
+        }
+      },
+      "overallScore": 88,
+      "generatedAt": "2025-01-20T10:00:00Z"
+    }
+  ]
+}

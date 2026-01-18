@@ -37,36 +37,34 @@ export function BottomNav({ onCreateBetClick }: BottomNavProps) {
   };
 
   return (
-    <nav className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 dark:bg-slate-950 dark:border-gray-800">
-      <div className="max-w-screen-sm mx-auto">
-        <div className="flex items-center justify-around h-20">
-          {TABS.map((tab) => {
-            const Icon = tab.icon;
-            const active = !tab.isModal && isActive(tab.href);
+    <nav className="fixed bottom-0 left-0 right-0 max-w-[393px] mx-auto bg-white border-t border-gray-200 dark:bg-slate-950 dark:border-gray-800">
+      <div className="flex items-center justify-around h-20 px-2">
+        {TABS.map((tab) => {
+          const Icon = tab.icon;
+          const active = !tab.isModal && isActive(tab.href);
 
-            return (
-              <button
-                key={tab.href}
-                onClick={() => handleTabClick(tab)}
+          return (
+            <button
+              key={tab.href}
+              onClick={() => handleTabClick(tab)}
+              className={cn(
+                'flex flex-col items-center justify-center w-full h-20 transition-colors flex-1',
+                active
+                  ? 'text-blue-600 dark:text-blue-400'
+                  : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-300'
+              )}
+            >
+              <Icon
+                size={24}
                 className={cn(
-                  'flex flex-col items-center justify-center w-full h-20 transition-colors',
-                  active
-                    ? 'text-blue-600 dark:text-blue-400'
-                    : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-300'
+                  'mb-1',
+                  tab.special && 'w-12 h-12 bg-blue-600 text-white rounded-full p-3'
                 )}
-              >
-                <Icon
-                  size={24}
-                  className={cn(
-                    'mb-1',
-                    tab.special && 'w-12 h-12 bg-blue-600 text-white rounded-full p-3'
-                  )}
-                />
-                <span className="text-xs font-medium">{tab.label}</span>
-              </button>
-            );
-          })}
-        </div>
+              />
+              <span className="text-xs font-medium">{tab.label}</span>
+            </button>
+          );
+        })}
       </div>
     </nav>
   );

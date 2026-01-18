@@ -166,18 +166,6 @@ export default function BetDetailPage({
               </div>
             </div>
 
-            {/* Stake Info */}
-            {bet.stakeAmount && (
-              <div>
-                <h3 className="font-semibold text-gray-900 dark:text-white mb-1">
-                  Stake Required
-                </h3>
-                <p className="text-lg font-bold text-gray-900 dark:text-white">
-                  ${bet.stakeAmount}
-                </p>
-              </div>
-            )}
-
             {/* Proof Requirement */}
             {bet.proofRequirement !== 'NONE' && (
               <div>

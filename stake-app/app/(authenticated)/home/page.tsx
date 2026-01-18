@@ -20,14 +20,6 @@ export default function HomePage() {
   return (
     <>
       <PageShell
-        header={
-          <div className="p-4">
-            <h1 className="text-2xl font-bold text-gray-900 dark:text-white">Home</h1>
-            <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
-              All accessible bets from your circles
-            </p>
-          </div>
-        }
         onCreateBetClick={() => setShowCreateBetModal(true)}
       >
         <div className="p-4 space-y-6">
@@ -95,23 +87,6 @@ export default function HomePage() {
               </div>
             )}
           </div>
-
-          {/* Empty State */}
-          {!isFeedLoading &&
-            !feedError &&
-            (!feedBets || feedBets.length === 0) &&
-            pendingStakesData.length === 0 && (
-              <div className="bg-gradient-to-br from-blue-50 to-purple-50 dark:from-blue-950 dark:to-purple-950 rounded-lg p-8 text-center border border-blue-200 dark:border-blue-800">
-                <div className="space-y-3">
-                  <h3 className="text-lg font-bold text-gray-900 dark:text-white">
-                    Get Started
-                  </h3>
-                  <p className="text-gray-600 dark:text-gray-400">
-                    Create your first bet or join a circle to see bets appear here.
-                  </p>
-                </div>
-              </div>
-            )}
         </div>
       </PageShell>
 

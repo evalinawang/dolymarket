@@ -46,14 +46,14 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     async (email: string, password: string) => {
       setAuthState((prev) => ({ ...prev, isLoading: true, error: null }));
       try {
-        // Demo login support - allow demo@stake.app / demopass123
-        if (email === 'demo@stake.app' && password === 'demopass123') {
+        // Demo login support - allow demo@rumble.app / demopass123
+        if (email === 'demo@rumble.app' && password === 'demopass123') {
           const demoUser: User = {
-            id: 'user-demo-001',
-            email: 'demo@stake.app',
-            username: 'demouser',
-            displayName: 'Demo User',
-            bio: 'Testing the Stake app',
+            id: 'user-001',
+            email: 'alex@rumble.app',
+            username: 'alexfitness',
+            displayName: 'Alex Chen',
+            bio: 'Gym rat and competitive bettor 💪',
             createdAt: new Date('2025-01-01').toISOString(),
             updatedAt: new Date().toISOString(),
           };

@@ -23,8 +23,14 @@ export function useCircles(userId?: string) {
   return useQuery({
     queryKey: circleKeys.list(userId || ''),
     queryFn: async () => {
-      // TODO: Replace with actual API call
-      return apiClient.get<Circle[]>('/circles');
+      try {
+        // TODO: Replace with actual API call
+        return await apiClient.get<Circle[]>('/circles');
+      } catch (error) {
+        // Demo mode: return empty array instead of throwing
+        console.warn('Failed to load circles, showing empty state instead of error');
+        return [];
+      }
     },
     enabled: !!userId,
   });
